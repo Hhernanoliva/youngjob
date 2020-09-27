@@ -1,0 +1,123 @@
+@import "../variable/font-size";
+@import "../variable/colors";
+@import "../mixin/respon";
+.nosotros{
+    width: 100%;
+    .container-title{
+        .title{
+            h4{
+                margin: 0;
+            }
+            .line{
+                border-bottom: 5px solid #cdbef6;
+                width: 400px;
+                margin: 0 0 0 -250px; 
+            }
+        }
+        .info{
+            align-items: center;
+        }
+    }
+    .container-cards{
+        .card{
+            .img{
+                img{}
+            }
+        }
+    }
+    
+
+    @include respon(desktop){
+        .container-title{
+            .title{
+                h4{}
+                .line{}
+            }
+            .info{}
+        }
+        .container-cards{
+            .card{
+                .img{
+                    width: 80px;
+                    height: 80px;
+                    border-radius: 150%;
+                    overflow: hidden;
+                    img{
+                        width: 100%;
+                    }
+                }
+                .text{
+                    h3{}
+                    p{}
+                    .detail{}
+                }
+            }
+        }
+    }
+
+    @include respon(tablet){
+        .container-title{
+            .title{
+                h4{}
+                .line{}
+            }
+            .info{}
+        }
+        .container-cards{
+            .card{
+                .img{
+                    width: 80px;
+                    height: 80px;
+                    border-radius: 150%;
+                    overflow: hidden;
+                    img{
+                        width: 100%;
+                    } 
+                }
+                .text{
+                    h3{}
+                    p{}
+                    .detail{}
+                }
+            }
+        }
+    }
+
+    @include respon(mobile){
+        .container-title{
+            .title{
+                h4{}
+                .line{}
+            }
+            .info{}
+        }
+        .container-cards{
+
+            .card{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                .img{
+                    width: 80px;
+                    height: 80px;
+                    border-radius: 150%;
+                    overflow: hidden;
+                    img{
+                        width: 100%;
+                    }
+                }
+                .text{
+                    h3{
+                        font-size: 1rem;
+                    }
+                    p{
+                        
+                        font-size: 0.9rem;
+                    }
+                    .detail{}
+                }
+            }
+        }
+    }
+}

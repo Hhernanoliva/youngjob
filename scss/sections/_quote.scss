@@ -1,0 +1,33 @@
+@import "../variable/font-size";
+@import "../variable/colors";
+
+.quote {
+    blockquote{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 400px;
+        background-image: linear-gradient(to right, #DE3375, #fc68af), url(../../img/quote-img.jpg);
+        background-blend-mode: soft-light;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        margin: 0;
+        color: #fff;
+        text-shadow: 1px 1px 1px rgba(8, 8, 8, 0.3);
+        .quote-izq{
+            width: 2em;
+            margin: 0 20px;
+        }
+        .quote-der{
+            width: 2em;
+            margin: 0 20px;
+            transform: scaleX(-1) scaleY(-1);
+        }
+        p{
+            text-align: center;
+            font-size: 1.8rem;
+        }
+    }
+}

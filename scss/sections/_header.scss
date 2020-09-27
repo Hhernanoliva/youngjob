@@ -1,0 +1,147 @@
+@import "./scss/mixin/respon";
+
+header{
+    position: relative;
+    .navbar{
+        overflow: hidden;
+        position: fixed;
+        top: 0; 
+        width: 100%;
+        background-color:#d28e5f;
+        z-index: 10;
+        .container{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            .logo{
+                display:flex;
+                align-items: center;
+                img{
+                    width: 100%;
+                }
+            }
+            .menu{
+
+            }
+        }
+    }
+
+
+    .hero{
+        height: 100vh;
+        position: relative;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        .container{
+            width: 100%;
+            height: 100%;
+            display: table;
+            .container-hero{
+                text-align: center;
+                display: table-cell;
+                vertical-align: middle;
+                width: 100%;
+                padding-right: 15px;
+                padding-left: 15px;
+                margin-right: auto;
+                margin-left: auto;
+                
+            }
+        }
+    }
+   /* .hero:before {
+        content: "";
+        position: fixed;
+        left: 0;
+        right: 0;
+        z-index: -1;
+        display: block;
+        background-image: url("./img/hero.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        -webkit-filter: blur(5px);
+        -moz-filter: blur(5px);
+        -o-filter: blur(5px);
+        -ms-filter: blur(5px);
+        filter: blur(5px);
+    }*/
+
+    @include respon(tablet){
+        .navbar{
+            .container{
+                padding: 10px 15px;
+                .logo{
+                    img{
+                        width: 80px;
+                    }
+                }
+            }
+        }
+        .hero{
+            .container{
+                .container-hero{
+                    
+                }
+            }
+        }
+    }
+    @include respon(desktop){
+        .navbar{
+            .container{
+                .logo{
+                    img{}
+                }
+            }
+        }
+        .hero{
+            .container{
+                .container-hero{}
+            }
+        }
+    }
+
+    @include respon(mobile){
+        .navbar{
+            .container{
+                padding: 10px 15px;
+                .logo{
+                    img{
+                        width: 60px;
+                    }
+                }
+                .menu{
+                    display: none;
+                }
+            }
+        }
+        .hero{
+            .container{
+                .container-hero{
+                    .slogan{
+                        font-size: 1.9rem;
+                    }
+                    a{
+                        button{
+                            appearance:inherit;
+                            border: none;
+                            background-color: transparent;
+                            outline: none
+                        }
+                        button:hover{
+                            border: none;
+                            outline: none
+                        }
+                        button:active{
+                            border: none;
+                            outline: none
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+}

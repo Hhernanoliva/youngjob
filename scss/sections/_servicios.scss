@@ -1,0 +1,56 @@
+@import "../variable/font-size";
+@import "../variable/colors";
+
+.servicios {
+    .container-title{
+        h4{
+            margin: 0;
+            font-size: $title-section;
+        }
+        .line{
+            border-bottom: 5px solid #cdbef6;
+            width: 400px;
+            margin: 0 0 0 -250px; //CMABIAR A MEDIA QUERY
+        }
+    }
+    .container-text{
+
+    }
+    .container-main{
+        img {
+            width: 100px;
+        }
+    }
+    @include respon(mobile){
+        .container-title{
+            h4{}
+            .line{}
+        }
+        .container-text{}
+        .container-main{
+            img {}
+        }
+    }
+
+    @include respon(tablet){
+        .container-title{
+            h4{}
+            .line{}
+        }
+        .container-text{}
+        .container-main{
+            img {}
+        }
+    }
+
+    @include respon(desktop){
+        .container-title{
+            h4{}
+            .line{}
+        }
+        .container-text{}
+        .container-main{
+            img {}
+        }
+    }
+}
