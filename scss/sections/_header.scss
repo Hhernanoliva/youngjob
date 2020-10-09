@@ -12,6 +12,7 @@ header{
         width: 100%;
         z-index: 10;
         transition: all 1s ease;
+        
         .container{
             display: flex;
             align-items: center;
@@ -47,6 +48,7 @@ header{
 
                 }
             }
+            @import "../component/button";
         }
     }
     .background{
