@@ -1,16 +1,17 @@
 @import "./scss/mixin/respon";
 @import "../variable/colors";
-
+@font-face {
+    font-family: "Lemon Milk";
+    src: url(../../font/LemonMilk.otf);
+    }
 header{
     position: relative;
     .navbar{
-        overflow: hidden;
         position: fixed;
         top: 0; 
         width: 100%;
-        background: linear-gradient(180deg, rgba(123,68,107,0.97) 10%, rgba(80,73,141,0.97) 100%);
-        box-shadow: 0px 1px 5px 3px rgba(88, 70, 136, 0.5);
         z-index: 10;
+        transition: all 1s ease;
         .container{
             display: flex;
             align-items: center;
@@ -23,6 +24,8 @@ header{
                     width: 100%;
                 }
                 h2{
+                    font-family: "Lemon Milk";
+                    letter-spacing: 3px;
                     color:#f7efc0;
                     text-shadow: 4px -2px 0px rgb(81,10,10);
                 }
@@ -37,6 +40,7 @@ header{
                     text-decoration: none;
                     color:#f7efc0;
                     letter-spacing: 2px;
+                    transition: all 0.19s ;
                 }
                 a:hover{
                     text-shadow: 3px -2px 3px rgb(81,10,10);
@@ -45,6 +49,17 @@ header{
             }
         }
     }
+    .background{
+        background: transparent; 
+        transition: all 0.5s ease;
+    }
+    .sticky{
+        background: rgba(123, 68, 107, 0.8);
+        transition: all 0.5s ease;
+        padding: 0;
+        box-shadow: 0px 1px 5px 3px rgba(88, 70, 136, 0.3);
+    }
+    
     .hero{
         height: 100vh;
         position: relative;
@@ -53,14 +68,17 @@ header{
             height: 100%;
             display: table;
             .container-hero{
+                background-image: url(../../img/);
                 background-attachment: fixed;
                 text-align: center;
                 display: table-cell;
                 vertical-align: middle;
                 width: 100%;
+                background-color: rgba(40, 11, 63, 0.56);
+                background-blend-mode: overlay;
                 h3{
                     font-style: italic;
-                    color: $title;
+                    color: rgb(228, 228, 228);
                     text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.2);
                 }
                 a{
@@ -73,7 +91,8 @@ header{
                         font-weight: bold;
                         color: $negro;
                         cursor: pointer;
-                        background-color: #fffb00d5;
+                        background-color: #ffee00e1;
+                        text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.5);
                         border-radius: 9.5px;
                         box-shadow: 3px 5px 7px 0px rgba(94, 93, 0, 0.39);
                     }
@@ -111,7 +130,7 @@ header{
                         font-size: 0.8rem;
                     }
                     a:hover{
-                        font-size: 1.05rem;
+                        font-size: 0.97rem;
                         color: #fffcee;
                     }
                 }
@@ -119,12 +138,12 @@ header{
         }
         .hero{
             .container{
+                box-shadow: 0px 1px 5px 3px rgba(88, 70, 136, 0.5);
                 .container-hero{
-                    background-image: url(../../img/fondo.jpg);
+                    background-image: url(../../img/mont4.jpg);
                     background-size: cover;
                     background-position: center;
-                    background-color: #969494;
-                    background-blend-mode: overlay;
+
                     .slogan{
                         font-size: 3rem;
                         padding: 10px 50px;
@@ -149,11 +168,11 @@ header{
                 height: 50px;
                 .logo{
                     img{
-                        width: 55px;
-                        margin: 5px 10px 5px 15px;
+                        width: 40px;
+                        margin: 5px 15px 5px 15px;
                     }
                     h2{
-                        font-size: 1.2rem;
+                        font-size: 0.9rem;
                     }
                 }
                 .menu{
@@ -164,19 +183,24 @@ header{
         .hero{
             .container{
                 .container-hero{
-                    background-image: url(../../img/fondo.jpg);
+                    background-image: url(../../img/mont1.jpg);
                     background-size: cover;
                     background-position: center;
-                    background-color: #969494;
+                    background-color: rgba(40, 11, 63, 0.56);
                     background-blend-mode: overlay;
+                    height: 100vh;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
                     .slogan{
-                        padding: 9px 18px;
-                        font-size: 2rem;
+                        padding: 40% 18px 0 18px;
+                        font-size: 1.7rem;
                     }
                     a{
                         button{
-                            font-size: 1.3rem;
+                            font-size: 0.9rem;
                             padding: 15px 25px;
+                            margin: 0 0 50% 0;
                         }
                     }
                 }

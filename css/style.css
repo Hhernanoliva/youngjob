@@ -1,13 +1,15 @@
+@font-face {
+  font-family: "Lemon Milk";
+  src: url(../../font/LemonMilk.otf); }
+
 header {
   position: relative; }
   header .navbar {
-    overflow: hidden;
     position: fixed;
     top: 0;
     width: 100%;
-    background: linear-gradient(180deg, rgba(123, 68, 107, 0.97) 10%, rgba(80, 73, 141, 0.97) 100%);
-    box-shadow: 0px 1px 5px 3px rgba(88, 70, 136, 0.5);
-    z-index: 10; }
+    z-index: 10;
+    transition: all 1s ease; }
     header .navbar .container {
       display: flex;
       align-items: center;
@@ -19,6 +21,8 @@ header {
         header .navbar .container .logo img {
           width: 100%; }
         header .navbar .container .logo h2 {
+          font-family: "Lemon Milk";
+          letter-spacing: 3px;
           color: #f7efc0;
           text-shadow: 4px -2px 0px #510a0a; }
       header .navbar .container .menu {
@@ -30,9 +34,18 @@ header {
         header .navbar .container .menu a {
           text-decoration: none;
           color: #f7efc0;
-          letter-spacing: 2px; }
+          letter-spacing: 2px;
+          transition: all 0.19s; }
         header .navbar .container .menu a:hover {
           text-shadow: 3px -2px 3px #510a0a; }
+  header .background {
+    background: transparent;
+    transition: all 0.5s ease; }
+  header .sticky {
+    background: rgba(123, 68, 107, 0.8);
+    transition: all 0.5s ease;
+    padding: 0;
+    box-shadow: 0px 1px 5px 3px rgba(88, 70, 136, 0.3); }
   header .hero {
     height: 100vh;
     position: relative; }
@@ -41,14 +54,17 @@ header {
       height: 100%;
       display: table; }
       header .hero .container .container-hero {
+        background-image: url(../../img/);
         background-attachment: fixed;
         text-align: center;
         display: table-cell;
         vertical-align: middle;
-        width: 100%; }
+        width: 100%;
+        background-color: rgba(40, 11, 63, 0.56);
+        background-blend-mode: overlay; }
         header .hero .container .container-hero h3 {
           font-style: italic;
-          color: #1a1a1a;
+          color: #e4e4e4;
           text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.2); }
         header .hero .container .container-hero a button {
           appearance: inherit;
@@ -59,7 +75,8 @@ header {
           font-weight: bold;
           color: #1a1a1a;
           cursor: pointer;
-          background-color: #fffb00d5;
+          background-color: #ffee00e1;
+          text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.5);
           border-radius: 9.5px;
           box-shadow: 3px 5px 7px 0px rgba(94, 93, 0, 0.39); }
         header .hero .container .container-hero a button:hover {
@@ -82,42 +99,47 @@ header {
         padding: 0 5px;
         font-size: 0.8rem; }
       header .navbar .container .menu a:hover {
-        font-size: 1.05rem;
+        font-size: 0.97rem;
         color: #fffcee; }
-    header .hero .container .container-hero {
-      background-image: url(../../img/fondo.jpg);
-      background-size: cover;
-      background-position: center;
-      background-color: #969494;
-      background-blend-mode: overlay; }
-      header .hero .container .container-hero .slogan {
-        font-size: 3rem;
-        padding: 10px 50px; }
-      header .hero .container .container-hero a button {
-        padding: 15px 25px;
-        font-size: 1.3rem; } }
+    header .hero .container {
+      box-shadow: 0px 1px 5px 3px rgba(88, 70, 136, 0.5); }
+      header .hero .container .container-hero {
+        background-image: url(../../img/mont4.jpg);
+        background-size: cover;
+        background-position: center; }
+        header .hero .container .container-hero .slogan {
+          font-size: 3rem;
+          padding: 10px 50px; }
+        header .hero .container .container-hero a button {
+          padding: 15px 25px;
+          font-size: 1.3rem; } }
   @media (max-width: 768px) {
     header .navbar .container {
       height: 50px; }
       header .navbar .container .logo img {
-        width: 55px;
-        margin: 5px 10px 5px 15px; }
+        width: 40px;
+        margin: 5px 15px 5px 15px; }
       header .navbar .container .logo h2 {
-        font-size: 1.2rem; }
+        font-size: 0.9rem; }
       header .navbar .container .menu {
         display: none; }
     header .hero .container .container-hero {
-      background-image: url(../../img/fondo.jpg);
+      background-image: url(../../img/mont1.jpg);
       background-size: cover;
       background-position: center;
-      background-color: #969494;
-      background-blend-mode: overlay; }
+      background-color: rgba(40, 11, 63, 0.56);
+      background-blend-mode: overlay;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between; }
       header .hero .container .container-hero .slogan {
-        padding: 9px 18px;
-        font-size: 2rem; }
+        padding: 40% 18px 0 18px;
+        font-size: 1.7rem; }
       header .hero .container .container-hero a button {
-        font-size: 1.3rem;
-        padding: 15px 25px; } }
+        font-size: 0.9rem;
+        padding: 15px 25px;
+        margin: 0 0 50% 0; } }
 
 .servicios .container-title h4 {
   margin: 0;
@@ -128,36 +150,64 @@ header {
   width: 400px;
   margin: 0 0 0 -250px; }
 
-.servicios .container-main img {
-  width: 100px; }
-
-@media (max-width: 768px) {
-  .servicios .container-main {
+.servicios .container-main {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center; }
+  .servicios .container-main .card {
     display: flex;
-    justify-content: center;
-    flex-direction: column;
+    justify-content: space-around;
     align-items: center;
-    margin: 70px 20px;
-    box-sizing: border-box;
-    overflow: hidden; }
+    text-align: end; }
+    .servicios .container-main .card .container-img img {
+      width: 100%; }
+
+@media (min-width: 768px) {
+  .servicios {
+    padding: 130px 80px; }
+    .servicios .container-title h4 {
+      margin: 0 0 25px 0; }
+    .servicios .container-text {
+      margin: 0 0 75px 0; }
     .servicios .container-main .card {
       display: flex;
-      justify-content: space-around;
-      align-items: center;
+      justify-content: center;
       width: 100%;
-      margin-bottom: 100px;
-      text-align: end; }
-      .servicios .container-main .card img {
-        width: 170px;
-        height: 250px;
-        background-color: brown;
-        padding: 15px; }
-      .servicios .container-main .card .container-content {
-        width: 250px;
-        padding: 15px; }
+      margin: 0 0 100px 0; }
+      .servicios .container-main .card .container-img {
+        width: 300px; }
     .servicios .container-main .card:nth-last-child(1) {
       flex-direction: row-reverse;
       text-align: initial; } }
+
+@media (max-width: 768px) {
+  .servicios .container-title {
+    padding: 40px 0 20px 20px; }
+    .servicios .container-title h4 {
+      font-size: 1.4rem;
+      margin: 0 0 7px 0; }
+    .servicios .container-title .line {
+      margin: 0 0 0 -300px; }
+  .servicios .container-main {
+    margin: 70px;
+    box-sizing: border-box;
+    overflow: hidden; }
+    .servicios .container-main .card {
+      width: 100%;
+      margin-bottom: 50px;
+      display: flex;
+      flex-direction: column; }
+      .servicios .container-main .card .container-img {
+        width: 200px; }
+        .servicios .container-main .card .container-img img {
+          width: 100%; }
+      .servicios .container-main .card .container-content {
+        width: 250px;
+        padding: 15px; }
+    .servicios .container-main .card:nth-last-child(1) .container-img {
+      display: flex;
+      flex-direction: column; } }
 
 .quote blockquote {
   display: flex;
@@ -219,6 +269,9 @@ header {
         font-size: 1rem; }
       .nosotros .container-cards .card .text p {
         font-size: 0.9rem; } }
+
+html {
+  scroll-behavior: smooth; }
 
 body {
   font-family: 'Raleway', sans-serif;

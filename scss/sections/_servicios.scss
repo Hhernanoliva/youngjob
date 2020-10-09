@@ -17,59 +17,84 @@
 
     }
     .container-main{
-        img {
-            width: 100px;
-        }
-    }
-
-    @include respon(desktop){
-        .container-title{
-            h4{}
-            .line{}
-        }
-        .container-text{}
-        .container-main{
-            img {}
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        .card{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            text-align: end;
+            .container-img{
+                img {
+                    width: 100%;
+                }
+            }
+   
         }
     }
 
     @include respon(tablet){
+        padding: 130px 80px;
         .container-title{
-            h4{}
-            .line{}
+            h4{
+                margin: 0 0 25px 0;
+            }
+            .line{
+            }
         }
-        .container-text{}
+        .container-text{
+                margin: 0 0 75px 0;
+        }
         .container-main{
-            img {}
+            .card{
+                display: flex;
+                justify-content: center;
+                width: 100%;
+                margin: 0 0 100px 0;
+                .container-img{
+                    width: 300px;
+                    img {
+                    }
+                }
+                .container-content{
+                }
+            }
+            .card:nth-last-child(1){
+                flex-direction: row-reverse;
+                text-align: initial;
+            }
+            
         }
     }
 
     @include respon(mobile){
         .container-title{
-            h4{}
-            .line{}
+            padding: 40px 0 20px 20px ;
+            h4{
+                font-size: 1.4rem;
+                margin: 0 0 7px 0;
+            }
+            .line{
+                margin: 0 0 0 -300px;
+            }
         }
         .container-text{}
         .container-main{
-            display: flex;
-            justify-content: center;
-            flex-direction: column;
-            align-items: center;
-            margin: 70px 20px;    
+            margin: 70px;  
             box-sizing: border-box;
-            overflow: hidden;        
+            overflow: hidden;    
             .card{
-                display: flex;
-                justify-content: space-around;
-                align-items: center;
                 width: 100%;
-                margin-bottom: 100px;
-                text-align: end;
-                img{
-                    width: 170px;
-                    height: 250px;
-                    background-color: brown;
-                    padding: 15px;
+                margin-bottom: 50px;
+                display: flex;
+                flex-direction: column;
+                .container-img{
+                    width: 200px;
+                    img{
+                        width: 100%;
+                    }
                 }
                 .container-content{
                     width: 250px;
@@ -77,9 +102,14 @@
                 }
             }
             .card:nth-last-child(1){
-                flex-direction: row-reverse;
-                text-align: initial;
+                .container-img{
+                    display: flex;
+                    flex-direction: column;
+                    img {
+                    }
+                }
             }
+
         }
     }
 }

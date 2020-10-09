@@ -3,6 +3,9 @@
 @import "./sections/quote";
 @import "./sections/nosotros";
 
+html {
+    scroll-behavior: smooth;
+  }
 body {
     font-family: 'Raleway', sans-serif;
     box-sizing: border-box;
