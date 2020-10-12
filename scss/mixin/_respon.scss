@@ -1,8 +1,8 @@
 @mixin respon($point) {
     @if $point == tablet {
-      @media (min-width: 768px) { @content; }
+      @media (min-width: 767px) { @content; }
     }
     @else if $point == mobile {
-      @media (max-width: 768px)  { @content; }
+      @media (max-width: 767px)  { @content; }
     }
   }

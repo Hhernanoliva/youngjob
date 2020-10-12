@@ -1,0 +1,99 @@
+.navbar{
+    position: fixed;
+    top: 0; 
+    width: 100%;
+    z-index: 9;
+    transition: all 1s ease;
+    
+    .container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        .logo{
+            display:flex;
+            align-items: center;
+            img{
+                width: 100%;
+            }
+            h2{
+                font-family: "Lemon Milk";
+                letter-spacing: 3px;
+                color:#f7efc0;
+                text-shadow: 4px -2px 0px rgb(81,10,10);
+            }
+        }
+        .menu{
+            display:flex;
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+            overflow: hidden;
+            a{
+                text-decoration: none;
+                color:#f7efc0;
+                letter-spacing: 2px;
+                transition: all 0.19s ;
+            }
+            a:hover{
+                text-shadow: 3px -2px 3px rgb(81,10,10);
+
+            }
+        }
+        @import "../component/button";
+    }
+}
+.sticky{
+    background: rgba(123, 68, 107, 0.8);
+    transition: all 0.5s ease;
+    padding: 0;
+    box-shadow: 0px 1px 5px 3px rgba(88, 70, 136, 0.3);
+}
+@include respon(tablet){ ///////////////////// TABLET
+    .navbar{
+        .container{
+            .logo{
+                img{
+                    width: 50px;
+                    margin: 4px 0 4px 45px;
+                }
+                h2{
+                    margin: 0 0 0 10px;
+                    font-size: 1rem;
+                }
+            }
+            .menu{
+                margin: 0 30px 0 0;
+                a{  
+                    width: 100px;
+                    padding: 0 5px;
+                    font-size: 0.8rem;
+                }
+                a:hover{
+                    font-size: 0.97rem;
+                    color: #fffcee;
+                }
+            }
+        }
+    }
+}
+
+@include respon(mobile){ ///////// MOBILE
+    .navbar{
+        .container{
+            height: 50px;
+            .logo{
+                img{
+                    width: 40px;
+                    margin: 5px 15px 5px 15px;
+                }
+                h2{
+                    font-size: 0.9rem;
+                }
+            }
+            .menu{
+                display: none;
+            }
+        }
+    }
+}

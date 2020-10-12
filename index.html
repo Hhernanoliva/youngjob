@@ -7,128 +7,142 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,700;0,800;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="./css/style.css">
-    <script type="text/javascript" src="./app.js"></script>
+    <script type="text/javascript" src="./js/app.js"></script>
     <title>Young Job</title>
 
 </head>
 <body onload="load()">
-    <header class="header"> 
-        <nav class="navbar">
-            <div class="container">
-                <div class="logo">
-                    <img src="./img/logo! (4).png" alt="">
-                    <h2>YOUNG JOB</h2>
-                </div>
-                <div class="menu">
-                    <a href="#servicios">Servicios</a>
-                    <a href="#Programas">Programas</a>
-                    <a href="./nosotros.html">Nosotros</a>                    
-                    <a href="#contacto">Contacto</a>
-                </div>
-                <button id="button" class="buttonBurguer"  aria-label="Main Menu" >
-                    <svg width="100" height="100" viewBox="0 0 100 100">
-                      <path class="line line1" d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
-                      <path class="line line2" d="M 20,50 H 80" />
-                      <path class="line line3" d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
-                    </svg>
-                </button>
-            </div>
-        </nav>
 
-        <div class="hero">
-            <div class="container">
-                <div class="container-hero">
-                    <h3 class="slogan">Concreta tus sueño
-                        nosotros te impulsamos</h3>
-                    <a href=""><button>Contactanos</button></a>
-                    
+    <div class="menu-modal" >
+        <a class="cerrarModal" href="#servicios">Servicios</a>
+        <a class="cerrarModal" href="#Programas">Programas</a>
+        <a class="cerrarModal" href="./nosotros.html">Nosotros</a>                    
+        <a class="cerrarModal" href="#contacto">Contacto</a>
+    </div>
+
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <img src="./img/logo.webp" alt="">
+                <h2>YOUNG JOB</h2>
+            </div>
+            <div class="menu">
+                <a href="#servicios">Servicios</a>
+                <a href="#Programas">Programas</a>
+                <a href="./nosotros.html">Nosotros</a>                    
+                <a href="#contacto">Contacto</a>
+            </div>
+            <button id="button" class="buttonBurguer btn-burger"  aria-label="Main Menu" >
+                <svg width="100" height="100" viewBox="0 0 100 100">
+                <path class="line line1" d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+                <path class="line line2" d="M 20,50 H 80" />
+                <path class="line line3" d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+                </svg>
+            </button>
+        </div>
+    </nav>
+
+    <div id="bodyOverlay">
+        
+        <header class="header"> 
+            <div class="hero">
+                <div class="container">
+                    <div class="container-hero">
+                        <h3 class="slogan">Concreta tus sueño
+                            nosotros te impulsamos</h3>
+                        <a href=""><button>Contactanos</button></a>
+                        
+                    </div>
                 </div>
             </div>
-        </div>
-    </header>
+        </header>
 
-    <section id="servicios" class="servicios">
-        <div class="container-title">
-            <h4>Servicios</h4>
-            <div class="line"></div>
-        </div>
-        <div class="container-text">
-            <p>Nuestros servicios tienen la finalidad de potenciar a las personas y ayudar a diseñar estrategias acordes a los intereses de nuestros clientes a través de un abordaje interdisciplinario, de una manera empática y humanística.</p>
-        </div>
-        <div class="container-main">
+        <section  id="servicios" class="servicios">
+            <div   class="container-title">
+                <h4 >Servicios</h4>
+                <div class="line"></div>
+            </div>
+            <div class="container-text">
+                <p>Nuestros servicios tienen la finalidad de potenciar a las personas y ayudar a diseñar estrategias acordes a los intereses de nuestros clientes a través de un abordaje interdisciplinario, de una manera empática y humanística.</p>
+            </div>
+            <div class="container-main">
+                <div class="cards">
+                    <div class="container-card">
+                        <div class="container-top">
+                            <img src="./img/empresa.svg" alt="">
+                            <h4>EMPRESAS</h4>
+                            <div class="line"></div>
+                        </div>
+                        <div class="container-content">
+                            <h3>Atracción de talento.</h3>
+                            <h3>Formación y desarrollo. </h3>
+                        </div>
+                        <div class="container-btn">
+                            <button>Leer Mas</button>
+                        </div>
+                    </div>
+                    <div class="container-card">
+                        <div class="container-top">
+                            <img src="./img/individual.svg" alt="">
+                            <h4>INDIVIDUAL</h4>
+                            <div class="line"></div>
+                        </div>
+                        <div class="container-content">
+                            <h3>Asesoría Laboral.</h3>
+                            <h3>Confeccion de CV.</h3>
+                            <h3>Simulacro de entrevista.</h3>
+                            <h3>Perfil de Linkedin.</h3>
+                        </div>
+                        <div class="container-btn">
+                            <button>Leer Mas</button>
+                        </div>
+                    </div>
+                    <div class="container-card">
+                        <div class="container-top">
+                            <img src="./img/educacion.svg" alt="">
+                            <h4>EDUCACIÓN </h4>
+                            <div class="line"></div>
+                        </div>
+                        <div class="container-content">
+                            <h3>Talleres Gratuitos.</h3>
+                            <h3>Cursos.</h3>
+                        </div>
+                        <div class="container-btn">
+                            <button>Leer Mas</button>
+                        </div>
+                    </div>
+            </div>
             
-            <div class="cards">
-                
-                <div class="container-card">
-                    <h2>ASESORÍA LABORAL</h2>
-                    <img src="./img/asesoria4.jpg" alt="">
-                    <div class="container-content">
-                    
-                        <p> Asesoramiento en Armado de CV</p>
-                        <p>Simulacro de entrevistas</p>
-                        <p>Perfil de LinkedIn</p>
-                    </div>
-                 
-                </div>
+        </section>
 
-                <div class="container-card">
-                    <h2>RECLUTAMIENTO Y SELECCIÓN<</h2>
-                    <img src="./img/asesoria4.jpg" alt="">
-                    <div class="container-content">
-                        <p>Evaluaciones Psicologias</p>
-                        <p>Seguimiento del candidato</p>
-                        <p>Diseño del perfil requerido</p>
-                    </div>
-                 
-                </div>
+        <section class="quote">
+            <blockquote>
+                <img class="quote-izq" src="./img/comilla.svg" alt="">
+                <p>Sueños reales, procesos humanísticos</p>
+                <img class="quote-der" src="./img/comilla.svg" alt="">
+            </blockquote>
+        </section>
 
-                <div class="container-card">
-                    <h2>ASESORÍA LABORAL</h2>
-                    <img src="./img/asesoria4.jpg" alt="">
-                    <div class="container-content">
-                    
-                        <p> Asesoramiento en Armado de CV</p>
-                        <p>Simulacro de entrevistas</p>
-                        <p>Perfil de LinkedIn</p>
-                    </div>
-                 
-                </div>
-
-           
-        </div>
-
-    </section>
-
-
-    <section class="quote">
-        <blockquote>
-            <img class="quote-izq" src="./img/comilla.svg" alt="">
-            <p>Sueños reales, procesos humanísticos</p>
-            <img class="quote-der" src="./img/comilla.svg" alt="">
-        </blockquote>
-    </section>
-
-
-   
-    <section class="contacto">
-        <div class="container-title">
-            <h3>Contacto</h3>
-        </div>
-        <div class="container-contact">
-            <h5>texto para direccionar a las personas hacer click</h5>
-            <div class="container-socialmedia">
-                <a href=""><img src="" alt=""></a>
-                <a href=""><img src="" alt=""></a>
-                <a href=""><img src="" alt=""></a>
-                <a href=""><img src="" alt=""></a>
+        <section class="contacto">
+            <div class="container-title">
+                <h3>Contacto</h3>
             </div>
-            <div class="email">clipboardjs.com/ o mailgo.dev</div>
-        </div>
-    </section>
+            <div class="container-contact">
+                <h5>texto para direccionar a las personas hacer click</h5>
+                <div class="container-socialmedia">
+                    <a href=""><img src="" alt=""></a>
+                    <a href=""><img src="" alt=""></a>
+                    <a href=""><img src="" alt=""></a>
+                    <a href=""><img src="" alt=""></a>
+                </div>
+                <div class="email">clipboardjs.com/ o mailgo.dev</div>
+            </div>
+        </section>
 
-    <section class="footer">
+        <section class="footer">
 
-    </section>
-
+        </section>
+    </div>
+    <script src="./js/paper-button.js"></script>
 </body>
 </html>

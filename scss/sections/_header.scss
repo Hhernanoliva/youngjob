@@ -6,62 +6,11 @@
     }
 header{
     position: relative;
-    .navbar{
-        position: fixed;
-        top: 0; 
-        width: 100%;
-        z-index: 10;
-        transition: all 1s ease;
-        
-        .container{
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            width: 100%;
-            .logo{
-                display:flex;
-                align-items: center;
-                img{
-                    width: 100%;
-                }
-                h2{
-                    font-family: "Lemon Milk";
-                    letter-spacing: 3px;
-                    color:#f7efc0;
-                    text-shadow: 4px -2px 0px rgb(81,10,10);
-                }
-            }
-            .menu{
-                display:flex;
-                justify-content: center;
-                text-align: center;
-                align-items: center;
-                overflow: hidden;
-                a{
-                    text-decoration: none;
-                    color:#f7efc0;
-                    letter-spacing: 2px;
-                    transition: all 0.19s ;
-                }
-                a:hover{
-                    text-shadow: 3px -2px 3px rgb(81,10,10);
-
-                }
-            }
-            @import "../component/button";
-        }
-    }
+    
     .background{
         background: transparent; 
         transition: all 0.5s ease;
     }
-    .sticky{
-        background: rgba(123, 68, 107, 0.8);
-        transition: all 0.5s ease;
-        padding: 0;
-        box-shadow: 0px 1px 5px 3px rgba(88, 70, 136, 0.3);
-    }
-    
     .hero{
         height: 100vh;
         position: relative;
@@ -70,7 +19,6 @@ header{
             height: 100%;
             display: table;
             .container-hero{
-                background-image: url(../../img/);
                 background-attachment: fixed;
                 text-align: center;
                 display: table-cell;
@@ -84,6 +32,10 @@ header{
                     text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.2);
                 }
                 a{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    text-decoration: none;
                     button{
                         appearance:inherit;
                         border: none;
@@ -91,11 +43,14 @@ header{
                         outline: none;
                         text-transform: uppercase;
                         font-weight: bold;
-                        color: $negro;
+                        //color: $negro;
+                        color: $blanco;
                         cursor: pointer;
-                        background-color: #ffee00e1;
-                        text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.5);
-                        border-radius: 9.5px;
+                        //background-color: #ffee00e1;
+                        background-color: rgba(111,64,106,0.9);
+                        //text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.5);
+                        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+                        border-radius: 6px;
                         box-shadow: 3px 5px 7px 0px rgba(94, 93, 0, 0.39);
                     }
                     button:hover{
@@ -113,36 +68,11 @@ header{
     }
 
     @include respon(tablet){ ///////////////////// TABLET
-        .navbar{
-            .container{
-                .logo{
-                    img{
-                        width: 80px;
-                        margin: 5px 0 5px 45px;
-                    }
-                    h2{
-                        margin: 0 0 0 10px;
-                    }
-                }
-                .menu{
-                    margin: 0 30px 0 0;
-                    a{  
-                        width: 100px;
-                        padding: 0 5px;
-                        font-size: 0.8rem;
-                    }
-                    a:hover{
-                        font-size: 0.97rem;
-                        color: #fffcee;
-                    }
-                }
-            }
-        }
         .hero{
             .container{
                 box-shadow: 0px 1px 5px 3px rgba(88, 70, 136, 0.5);
                 .container-hero{
-                    background-image: url(../../img/mont4.jpg);
+                    background-image: url(../../img/hero-tablet.jpg);
                     background-size: cover;
                     background-position: center;
 
@@ -151,12 +81,15 @@ header{
                         padding: 10px 50px;
                     }
                     a{
+
                         button{
-                            padding: 15px 25px;
-                            font-size: 1.3rem;
+                            height: 64px;
+                            padding: 1.1em 1.2em;
+                            font-size: 1.2rem;
                         }
                         button:active{
-
+                            padding: 1.07em 1.17m;
+                            font-size: 1.17rem;
                         }
                     }
                 }
@@ -165,27 +98,10 @@ header{
     }
 
     @include respon(mobile){ ///////// MOBILE
-        .navbar{
-            .container{
-                height: 50px;
-                .logo{
-                    img{
-                        width: 40px;
-                        margin: 5px 15px 5px 15px;
-                    }
-                    h2{
-                        font-size: 0.9rem;
-                    }
-                }
-                .menu{
-                    display: none;
-                }
-            }
-        }
         .hero{
             .container{
                 .container-hero{
-                    background-image: url(../../img/mont1.jpg);
+                    background-image: url(../../img/hero-mobile.jpg);
                     background-size: cover;
                     background-position: center;
                     background-color: rgba(40, 11, 63, 0.56);
@@ -201,7 +117,7 @@ header{
                     a{
                         button{
                             font-size: 0.9rem;
-                            padding: 15px 25px;
+                            padding: 0.9em 1em;
                             margin: 0 0 50% 0;
                         }
                     }
