@@ -1,0 +1,192 @@
+@import "../variable/font-size";
+@import "../variable/colors";
+
+
+.contacto{
+
+    .container-title{
+        h4{
+            font-family: 'Sansita Swashed', cursive;
+            margin: 0;
+            font-size: $title-section;
+            font-weight: 700;
+            letter-spacing: 1.2px;
+        }
+        .line{
+            border-bottom: 5px solid #cdbef6;
+            width: 400px;
+            margin: 0 0 0 -250px;
+            box-shadow: rgba(0, 0, 0, 0.18) 2px 2px 2px;
+            border-top: 1px inset rgba(0,0,0,.08);
+            border-left: 1px inset rgba(0,0,0,.08);
+        }
+    }
+    .center{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            background-color: #d2e7ff94;
+            border-radius: 3px;
+            box-shadow: rgba(0, 0, 0, 0.18) 2px 2px 2px;
+            border-top: 1px inset rgba(0,0,0,.08);
+            border-left: 1px inset rgba(0,0,0,.08);
+            .container-text{
+                p{
+                    text-align: center;
+                }
+            }
+            .button-mail{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                button{
+                    letter-spacing: 1px;
+                    background-color: #da867d;
+                }
+            }
+            .container-cafe{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                p{
+                    text-align: center;
+                }
+                img{
+                }
+    
+            }
+            .redes{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+    }
+    
+    }
+    @include respon(tablet) {
+        padding: 0 50px;
+        .container-title{
+            padding: 88px 0 0 0;
+            h4{
+                padding: 0 30px;
+                margin: 0 0 5px 0;
+                font-size: 2rem;
+            }
+            .line{
+                width: 400px;
+                margin: 0 0 0 -220px; 
+            }
+        }
+        .center{
+            padding: 70px 0;
+            .container{
+                padding: 0 50px 10px 50px;
+                width: 610px;
+                .container-text{
+                    margin: 20px 0 0px 0;
+                    p{
+                        padding: 0 0px;
+                        font-size: 1.2rem;
+                        line-height: 25px;
+                    }
+                }
+                .button-mail{
+                    margin: 0 0 40px 0;
+                    button{
+                    }
+                }
+                .container-cafe{
+                    margin: 0 0 10px 0;
+                    p{
+                        width: 400px;
+                        font-size: 1rem;
+                        span{
+                            img{  
+                                width: 40px;   
+                                margin: -7px -3px;
+                            }
+                        }
+                      }
+                }
+                .redes{
+                    a{
+                        padding: 0px 40px;
+                        width: 60px;
+                        margin: 0 0 20px 0;
+                        img{
+                            width: 100%;
+                        }
+                    } 
+                }
+            }
+        }
+    }
+    @include respon(mobile) {
+        padding: 70px 10px 0 10px ;
+        .container-title{
+            padding: 0px 0 0 20px;
+            h4{
+                font-size: 1.5rem;
+                margin: 0 0 7px 0;
+            }
+            .line{
+                margin: 0 0 0 -290px; 
+            }
+        }
+        .center{
+            margin: 50px auto;
+            width: 300px;
+            .container{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                height: 380px;
+                .container-text{
+                    p{
+                        padding: 0 20px 30px 20px;
+                        margin: 0;
+                        font-size: 0.9rem; 
+                        line-height: 20px;
+                    }
+                }
+                .button-mail{
+                    padding: 0 0 50px 0;
+                    button{
+                        width: 230px;
+                        line-height: 17px;
+                        font-size: 0.8rem;
+                    }
+                }
+                .container-cafe{
+                    width: 280px;
+                    padding: 0 30px 20px 30px;
+                    p{
+                        font-size: 0.8rem;
+                        margin: 0;
+                    }
+                    img{
+                        margin: -8px -3px;
+                        width: 40px;    
+                    }
+                }
+                .redes{
+                    a{
+                        width: 40px;
+                        height: 40px;
+                        padding: 0 15px;
+                        img{
+                            width: 100%;
+                        }
+                    } 
+                }
+            }
+        }
+    }
+}

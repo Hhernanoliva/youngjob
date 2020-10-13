@@ -5,7 +5,7 @@ const load = () => {
     const menuModal = document.querySelector(".menu-modal");
     const overlay = document.querySelector("#bodyOverlay");
     const overlayActive = document.querySelector(".activeOverlay");
-    const cerrarModal = document.querySelector(".cerrarModal");
+    const cerrarModal = document.querySelectorAll(".cerrarModal");
     const btnBurger = document.querySelector('.btn-burger');
 
     // Sticky NavBar
@@ -21,11 +21,14 @@ const load = () => {
         overlay.classList.toggle('activeOverlay');
 
     });
-    cerrarModal.addEventListener('click', () => {
-        btnBurger.classList.remove('opened');
-        menuModal.classList.remove('activeModal');
-        overlay.classList.remove('activeOverlay');
-    });
+    cerrarModal.forEach(modal => {
+        modal.addEventListener('click', () => {
+            btnBurger.classList.remove('opened');
+            menuModal.classList.remove('activeModal');
+            overlay.classList.remove('activeOverlay');
+            console.log("ASFJKFLAJSJLFKAS")
+        });
+    })
 
     // Button General
     const buttons = document.querySelectorAll('button');
@@ -45,6 +48,23 @@ const load = () => {
     button.addEventListener('mousedown', handleClick);
     });
 
+    //Gradient Granim.JS
+    const granimInstance = new Granim({
+        element: '#canvas-basic',
+        direction: 'left-right',
+        isPausedWhenNotInView: true,
+        states : {
+            "default-state": {
+                gradients: [
+                    ['#854a7f', '#806c7e'],
+                    ['#a07e97', '#936787'],
+                    ['#fc68af', '#fa9dca']
+                ],
+                transitionSpeed: 3000
+            }
+
+        }
+    });
 
 }
 

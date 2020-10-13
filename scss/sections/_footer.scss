@@ -1,0 +1,9 @@
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0;
+    @include respon(mobile){
+        maring: 0;
+    }
+}

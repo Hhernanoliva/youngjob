@@ -5,16 +5,26 @@
     background-color: rgb(245, 245, 245);
     .container-title{
         h4{
+            font-family: 'Sansita Swashed', cursive;
             margin: 0;
             font-size: $title-section;
+            font-weight: 700;
+            letter-spacing: 1.2px;
         }
         .line{
             border-bottom: 5px solid #cdbef6;
             width: 400px;
-            margin: 0 0 0 -250px; //CMABIAR A MEDIA QUERY
+            margin: 0 0 0 -250px; 
+            box-shadow: rgba(0, 0, 0, 0.18) 2px 2px 2px;
+            border-top: 1px inset rgba(0,0,0,.08);
+            border-left: 1px inset rgba(0,0,0,.08);
         }
     }
-    .container-text{}
+    .container-text{
+        p{
+            text-align: center;
+        }
+    }
     
     .container-main{
         display: flex;
@@ -43,16 +53,22 @@
                     align-items: center;
                     flex-direction: column;
                 }
+                .container-content{
+                    h3{
+                        text-align: center;
+                    }
+                }
             }
         }
     }
-
+    
     @include respon(tablet){
-        padding: 70px 0px;
+        padding: 65px 0 0 0;
         .container-title{
             padding: 0 80px;
             h4{
                 margin: 0 0 5px 0;
+                font-size: 2rem;
             }
             .line{
             }
@@ -61,9 +77,8 @@
             display: flex;
             justify-content: center;
             width: 100%;
-            padding: 15px 0 50px 0;
+            padding: 45px 0 60px 0;
             p{
-                text-align: center;
                 width: 820px;
                 font-size: 1.2rem;
                 letter-spacing: 1px;
@@ -124,7 +139,7 @@
                 margin: 0 0 7px 0;
             }
             .line{
-                margin: 0 0 0 -300px;
+                margin: 0 0 0 -285px;
             }
         }
         .container-text{
@@ -138,16 +153,18 @@
             margin: 30px;  
             .cards{
                 width: 100%;
-                margin-bottom: 50px;
                 flex-direction: column;
                 .container-card{
-                    width: 243.36px;
-                    height: 393.9px;
+                    width: 245px;
+                    height: 350px;
                     margin: 0 0 30px 0;
+                    &:nth-child(3){
+                        margin: 0;
+                    }
                     .container-top{
                         img {
                             width: 120px;
-                            margin: 30px 0 0 0;
+                            margin: 10px 0 0 0;
                         }
                         h4{
                             margin: 10px 0 5px 0;
@@ -164,11 +181,15 @@
                         text-align: left;
                         font-size: 0.8rem;
                         h3{
+                            margin: 0;
                             font-weight: 500;
-                            &:nth-child(2){
-                                
+                            line-height: 30px;
                             }
                         }
+                        &:nth-child(2){
+                            h3{
+                                line-height: 22px;
+                            }
                     }
                     .container-btn{
                         margin: 0 0 20px 0;

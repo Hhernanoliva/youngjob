@@ -5,9 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,700;0,800;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="./css/style.css">
     <script type="text/javascript" src="./js/app.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/granim/2.0.0/granim.min.js"></script>
     <title>Young Job</title>
 
 </head>
@@ -29,14 +31,22 @@
             <div class="menu">
                 <a href="#servicios">Servicios</a>
                 <a href="#Programas">Programas</a>
-                <a href="./nosotros.html">Nosotros</a>                    
+                <a href="#Nosotros">Nosotros</a>                    
                 <a href="#contacto">Contacto</a>
             </div>
             <button id="button" class="buttonBurguer btn-burger"  aria-label="Main Menu" >
-                <svg width="100" height="100" viewBox="0 0 100 100">
-                <path class="line line1" d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+                <svg width="25" height="25" viewBox="0 0 100 100">
+                <path class="line line1" d="M 20,29.000046 H 80.000231 
+                C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 
+                94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 
+                79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 
+                L 25.000021,25.000058" />
                 <path class="line line2" d="M 20,50 H 80" />
-                <path class="line line3" d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+                <path class="line line3" d="M 20,70.999954 H 80.000231 
+                C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 
+                94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 
+                79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 
+                L 25.000021,74.999942" />
                 </svg>
             </button>
         </div>
@@ -48,7 +58,7 @@
             <div class="hero">
                 <div class="container">
                     <div class="container-hero">
-                        <h3 class="slogan">Concreta tus sueño
+                        <h3 class="slogan">Concreta tus sueños
                             nosotros te impulsamos</h3>
                         <a href=""><button>Contactanos</button></a>
                         
@@ -57,13 +67,17 @@
             </div>
         </header>
 
-        <section  id="servicios" class="servicios">
-            <div   class="container-title">
-                <h4 >Servicios</h4>
+        <section id="servicios" class="servicios">
+            <div class="container-title">
+                <h4>Servicios</h4>
                 <div class="line"></div>
             </div>
             <div class="container-text">
-                <p>Nuestros servicios tienen la finalidad de potenciar a las personas y ayudar a diseñar estrategias acordes a los intereses de nuestros clientes a través de un abordaje interdisciplinario, de una manera empática y humanística.</p>
+                <p>Somos una consultora con profesionales radicados a lo largo de Argentina que propone diseñar estrategias,
+                    acordes a las necesidades e intereses de nuestros clientes. Colaboramos potenciando a las personas
+                    extendiendo su perfil para lograr sus objetivos laborales y personales.
+                    <br><strong>¡Trabajemos juntos!</strong> 
+                    </p>
             </div>
             <div class="container-main">
                 <div class="cards">
@@ -104,8 +118,8 @@
                             <div class="line"></div>
                         </div>
                         <div class="container-content">
-                            <h3>Talleres Gratuitos.</h3>
                             <h3>Cursos.</h3>
+                            <h3>Talleres Gratuitos.</h3>
                         </div>
                         <div class="container-btn">
                             <button>Leer Mas</button>
@@ -116,33 +130,50 @@
         </section>
 
         <section class="quote">
-            <blockquote>
-                <img class="quote-izq" src="./img/comilla.svg" alt="">
-                <p>Sueños reales, procesos humanísticos</p>
-                <img class="quote-der" src="./img/comilla.svg" alt="">
-            </blockquote>
+            <canvas id="canvas-basic"></canvas>
+                <blockquote>
+                    <img class="quote-izq" src="./img/comilla.svg" alt="">
+                    <p>Sueños reales, procesos humanísticos</p>
+                    <img class="quote-der" src="./img/comilla.svg" alt="">
+                </blockquote>
+
         </section>
 
-        <section class="contacto">
+        <section id="contacto" class="contacto">
             <div class="container-title">
-                <h3>Contacto</h3>
+                <h4>Contacto</h4>
+                <div class="line"></div>
             </div>
-            <div class="container-contact">
-                <h5>texto para direccionar a las personas hacer click</h5>
-                <div class="container-socialmedia">
-                    <a href=""><img src="" alt=""></a>
-                    <a href=""><img src="" alt=""></a>
-                    <a href=""><img src="" alt=""></a>
-                    <a href=""><img src="" alt=""></a>
+            <div class="center">
+            <div class="container">
+                <div class="container-text">
+                 <p>Podras ponerte en contacto directo a travez de cualquier plataforma de lunes a viernes de 9 a 18 hs Argentina.</p> 
                 </div>
-                <div class="email">clipboardjs.com/ o mailgo.dev</div>
+                <div class="button-mail">
+                    <button onclick="location.href='mailto:joungjob@gmail.com';">Envianos un mail haciendo click aqui</button>
+                </div>
+                <div class="container-cafe">
+                    <p>¡Conocenos a travéz de nuestras redes sociales y tomamos un café virtual!<span><img src="./img/cafe.png" alt=""></span></p>
+                    
+                </div>
+                <div class="redes">
+                    <a href="https://www.linkedin.com/company/young-job/" target="_blank">
+                        <img src="./img/linkedin.svg" alt="">
+                    </a>
+                    <a href="https://api.whatsapp.com/send?phone=5493874405250&text=Young%20Job%20quisiera%20contactarme%20con%20ustedes" target="_blank">
+                        <img src="./img/whatsapp.svg" alt="">
+                    </a>
+                    <a href="https://www.instagram.com/youngjob.rrhh/?hl=es-la" target="_blank">
+                        <img src="./img/insta.svg" alt="">
+                    </a>
+                </div>
+            </div>
             </div>
         </section>
 
         <section class="footer">
-
+            <p>© Copyrigth 2020 | Young Job</p>
         </section>
     </div>
-    <script src="./js/paper-button.js"></script>
 </body>
 </html>

@@ -51,6 +51,7 @@
 }
 @include respon(tablet){ ///////////////////// TABLET
     .navbar{
+        padding: 5px 0;
         .container{
             .logo{
                 img{
@@ -70,7 +71,7 @@
                     font-size: 0.8rem;
                 }
                 a:hover{
-                    font-size: 0.97rem;
+                    font-weight: bold;
                     color: #fffcee;
                 }
             }

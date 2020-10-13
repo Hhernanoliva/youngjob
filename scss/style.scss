@@ -2,8 +2,11 @@
 @import "./sections/servicios";
 @import "./sections/quote";
 @import "./sections/nosotros";
+@import "./sections/contacto";
+@import "./sections/footer";
 @import "./component/menuModal";
 @import "./component/navbar";
+
 html {
     scroll-behavior: smooth;
   }
@@ -22,7 +25,7 @@ button {
   border: none;
   //border: 1px solid rgba(94, 54, 90, 0.9);
   padding: 0.6rem 1.25rem;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   border-radius: 5px;
   font-weight: 500;
   text-transform: uppercase;
@@ -33,7 +36,7 @@ button {
   cursor: pointer;
   &:active{
     padding: 0.59rem 1.19rem;
-    font-size: 0.88rem;
+    font-size: 0.78rem;
   }
 }
 button:before {
@@ -70,3 +73,4 @@ button:active:after {
   transition: clip-path 0.3s cubic-bezier(0.55, 0.085, 0.68, 0.53), opacity 0.4s ease-in-out;
   transition-delay: -0.1s, 0.5s;
 }
+

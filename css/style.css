@@ -90,12 +90,20 @@ header {
 .servicios {
   background-color: whitesmoke; }
   .servicios .container-title h4 {
+    font-family: 'Sansita Swashed', cursive;
     margin: 0;
-    font-size: 1.5rem; }
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: 1.2px; }
   .servicios .container-title .line {
     border-bottom: 5px solid #cdbef6;
     width: 400px;
-    margin: 0 0 0 -250px; }
+    margin: 0 0 0 -250px;
+    box-shadow: rgba(0, 0, 0, 0.18) 2px 2px 2px;
+    border-top: 1px inset rgba(0, 0, 0, 0.08);
+    border-left: 1px inset rgba(0, 0, 0, 0.08); }
+  .servicios .container-text p {
+    text-align: center; }
   .servicios .container-main {
     display: flex;
     justify-content: space-between;
@@ -122,20 +130,22 @@ header {
           justify-content: center;
           align-items: center;
           flex-direction: column; }
+        .servicios .container-main .cards .container-card .container-content h3 {
+          text-align: center; }
   @media (min-width: 767px) {
     .servicios {
-      padding: 70px 0px; }
+      padding: 65px 0 0 0; }
       .servicios .container-title {
         padding: 0 80px; }
         .servicios .container-title h4 {
-          margin: 0 0 5px 0; }
+          margin: 0 0 5px 0;
+          font-size: 2rem; }
       .servicios .container-text {
         display: flex;
         justify-content: center;
         width: 100%;
-        padding: 15px 0 50px 0; }
+        padding: 45px 0 60px 0; }
         .servicios .container-text p {
-          text-align: center;
           width: 820px;
           font-size: 1.2rem;
           letter-spacing: 1px;
@@ -180,7 +190,7 @@ header {
           font-size: 1.5rem;
           margin: 0 0 7px 0; }
         .servicios .container-title .line {
-          margin: 0 0 0 -300px; }
+          margin: 0 0 0 -285px; }
       .servicios .container-text p {
         padding: 3px 20px 0 20px;
         font-size: 0.95rem;
@@ -189,15 +199,16 @@ header {
         margin: 30px; }
         .servicios .container-main .cards {
           width: 100%;
-          margin-bottom: 50px;
           flex-direction: column; }
           .servicios .container-main .cards .container-card {
-            width: 243.36px;
-            height: 393.9px;
+            width: 245px;
+            height: 350px;
             margin: 0 0 30px 0; }
+            .servicios .container-main .cards .container-card:nth-child(3) {
+              margin: 0; }
             .servicios .container-main .cards .container-card .container-top img {
               width: 120px;
-              margin: 30px 0 0 0; }
+              margin: 10px 0 0 0; }
             .servicios .container-main .cards .container-card .container-top h4 {
               margin: 10px 0 5px 0;
               font-size: 1.2rem;
@@ -210,37 +221,71 @@ header {
               text-align: left;
               font-size: 0.8rem; }
               .servicios .container-main .cards .container-card .container-content h3 {
-                font-weight: 500; }
+                margin: 0;
+                font-weight: 500;
+                line-height: 30px; }
+            .servicios .container-main .cards .container-card:nth-child(2) h3 {
+              line-height: 22px; }
             .servicios .container-main .cards .container-card .container-btn {
               margin: 0 0 20px 0; }
         .servicios .container-main .card:nth-last-child(1) .container-img {
           display: flex;
           flex-direction: column; } }
 
-.quote blockquote {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 400px;
-  background-image: linear-gradient(to right, #DE3375, #fc68af), url(../../img/quote-img.jpg);
-  background-blend-mode: soft-light;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  margin: 0;
-  color: #fff;
-  text-shadow: 1px 1px 1px rgba(8, 8, 8, 0.3); }
-  .quote blockquote .quote-izq {
-    width: 2em;
-    margin: 0 20px; }
-  .quote blockquote .quote-der {
-    width: 2em;
-    margin: 0 20px;
-    transform: scaleX(-1) scaleY(-1); }
-  .quote blockquote p {
-    text-align: center;
-    font-size: 1.8rem; }
+.quote {
+  position: relative;
+  width: 100%; }
+  .quote #canvas-basic {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1; }
+  .quote blockquote {
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    color: #f5f5f5; }
+    .quote blockquote .quote-izq {
+      z-index: 2; }
+    .quote blockquote .quote-der {
+      transform: scaleX(-1) scaleY(-1);
+      z-index: 2; }
+    .quote blockquote p {
+      text-align: center;
+      z-index: 2; }
+  @media (min-width: 767px) {
+    .quote blockquote {
+      height: 140px;
+      margin: 0; }
+      .quote blockquote .quote-izq {
+        width: 2em;
+        margin: 0 20px; }
+      .quote blockquote .quote-der {
+        width: 2em;
+        margin: 0 20px; }
+      .quote blockquote p {
+        font-size: 1.4rem; } }
+  @media (max-width: 767px) {
+    .quote blockquote {
+      height: 100px;
+      margin: 0; }
+      .quote blockquote .quote-izq {
+        width: 1.2em;
+        margin: 0 5px; }
+      .quote blockquote .quote-der {
+        width: 1.2em;
+        margin: 0 5px; }
+      .quote blockquote p {
+        width: 250px;
+        line-height: 22px;
+        letter-spacing: 1px;
+        font-size: 1.03rem; } }
 
 .nosotros {
   width: 100%; }
@@ -277,6 +322,151 @@ header {
         font-size: 1rem; }
       .nosotros .container-cards .card .text p {
         font-size: 0.9rem; } }
+
+.contacto .container-title h4 {
+  font-family: 'Sansita Swashed', cursive;
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 1.2px; }
+
+.contacto .container-title .line {
+  border-bottom: 5px solid #cdbef6;
+  width: 400px;
+  margin: 0 0 0 -250px;
+  box-shadow: rgba(0, 0, 0, 0.18) 2px 2px 2px;
+  border-top: 1px inset rgba(0, 0, 0, 0.08);
+  border-left: 1px inset rgba(0, 0, 0, 0.08); }
+
+.contacto .center {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .contacto .center .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #d2e7ff94;
+    border-radius: 3px;
+    box-shadow: rgba(0, 0, 0, 0.18) 2px 2px 2px;
+    border-top: 1px inset rgba(0, 0, 0, 0.08);
+    border-left: 1px inset rgba(0, 0, 0, 0.08); }
+    .contacto .center .container .container-text p {
+      text-align: center; }
+    .contacto .center .container .button-mail {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column; }
+      .contacto .center .container .button-mail button {
+        letter-spacing: 1px;
+        background-color: #da867d; }
+    .contacto .center .container .container-cafe {
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .contacto .center .container .container-cafe p {
+        text-align: center; }
+    .contacto .center .container .redes {
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+
+@media (min-width: 767px) {
+  .contacto {
+    padding: 0 50px; }
+    .contacto .container-title {
+      padding: 88px 0 0 0; }
+      .contacto .container-title h4 {
+        padding: 0 30px;
+        margin: 0 0 5px 0;
+        font-size: 2rem; }
+      .contacto .container-title .line {
+        width: 400px;
+        margin: 0 0 0 -220px; }
+    .contacto .center {
+      padding: 70px 0; }
+      .contacto .center .container {
+        padding: 0 50px 10px 50px;
+        width: 610px; }
+        .contacto .center .container .container-text {
+          margin: 20px 0 0px 0; }
+          .contacto .center .container .container-text p {
+            padding: 0 0px;
+            font-size: 1.2rem;
+            line-height: 25px; }
+        .contacto .center .container .button-mail {
+          margin: 0 0 40px 0; }
+        .contacto .center .container .container-cafe {
+          margin: 0 0 10px 0; }
+          .contacto .center .container .container-cafe p {
+            width: 400px;
+            font-size: 1rem; }
+            .contacto .center .container .container-cafe p span img {
+              width: 40px;
+              margin: -7px -3px; }
+        .contacto .center .container .redes a {
+          padding: 0px 40px;
+          width: 60px;
+          margin: 0 0 20px 0; }
+          .contacto .center .container .redes a img {
+            width: 100%; } }
+
+@media (max-width: 767px) {
+  .contacto {
+    padding: 70px 10px 0 10px; }
+    .contacto .container-title {
+      padding: 0px 0 0 20px; }
+      .contacto .container-title h4 {
+        font-size: 1.5rem;
+        margin: 0 0 7px 0; }
+      .contacto .container-title .line {
+        margin: 0 0 0 -290px; }
+    .contacto .center {
+      margin: 50px auto;
+      width: 300px; }
+      .contacto .center .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 380px; }
+        .contacto .center .container .container-text p {
+          padding: 0 20px 30px 20px;
+          margin: 0;
+          font-size: 0.9rem;
+          line-height: 20px; }
+        .contacto .center .container .button-mail {
+          padding: 0 0 50px 0; }
+          .contacto .center .container .button-mail button {
+            width: 230px;
+            line-height: 17px;
+            font-size: 0.8rem; }
+        .contacto .center .container .container-cafe {
+          width: 280px;
+          padding: 0 30px 20px 30px; }
+          .contacto .center .container .container-cafe p {
+            font-size: 0.8rem;
+            margin: 0; }
+          .contacto .center .container .container-cafe img {
+            margin: -8px -3px;
+            width: 40px; }
+        .contacto .center .container .redes a {
+          width: 40px;
+          height: 40px;
+          padding: 0 15px; }
+          .contacto .center .container .redes a img {
+            width: 100%; } }
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 0; }
+  @media (max-width: 767px) {
+    .footer {
+      maring: 0; } }
 
 .menu-modal {
   position: fixed;
@@ -405,21 +595,23 @@ header {
   box-shadow: 0px 1px 5px 3px rgba(88, 70, 136, 0.3); }
 
 @media (min-width: 767px) {
-  .navbar .container .logo img {
-    width: 50px;
-    margin: 4px 0 4px 45px; }
-  .navbar .container .logo h2 {
-    margin: 0 0 0 10px;
-    font-size: 1rem; }
-  .navbar .container .menu {
-    margin: 0 30px 0 0; }
-    .navbar .container .menu a {
-      width: 100px;
-      padding: 0 5px;
-      font-size: 0.8rem; }
-    .navbar .container .menu a:hover {
-      font-size: 0.97rem;
-      color: #fffcee; } }
+  .navbar {
+    padding: 5px 0; }
+    .navbar .container .logo img {
+      width: 50px;
+      margin: 4px 0 4px 45px; }
+    .navbar .container .logo h2 {
+      margin: 0 0 0 10px;
+      font-size: 1rem; }
+    .navbar .container .menu {
+      margin: 0 30px 0 0; }
+      .navbar .container .menu a {
+        width: 100px;
+        padding: 0 5px;
+        font-size: 0.8rem; }
+      .navbar .container .menu a:hover {
+        font-weight: bold;
+        color: #fffcee; } }
 
 @media (max-width: 767px) {
   .navbar .container {
@@ -447,7 +639,7 @@ button {
   background: rgba(111, 64, 106, 0.9);
   border: none;
   padding: 0.6rem 1.25rem;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   border-radius: 5px;
   font-weight: 500;
   text-transform: uppercase;
@@ -458,7 +650,7 @@ button {
   cursor: pointer; }
   button:active {
     padding: 0.59rem 1.19rem;
-    font-size: 0.88rem; }
+    font-size: 0.78rem; }
 
 button:before {
   content: "";
