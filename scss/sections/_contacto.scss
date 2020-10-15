@@ -3,7 +3,7 @@
 
 
 .contacto{
-
+    background-color: #f5f5f5;
     .container-title{
         h4{
             font-family: 'Sansita Swashed', cursive;
@@ -140,24 +140,25 @@
             }
         }
         .center{
-            margin: 50px auto;
+            margin: 50px auto 10px;
+            
             width: 300px;
             .container{
                 display: flex;
                 justify-content: center;
                 align-items: center;
                 width: 100%;
-                height: 380px;
+                padding: 70px 0;
                 .container-text{
                     p{
-                        padding: 0 20px 30px 20px;
+                        padding: 0 20px 40px 20px;
                         margin: 0;
                         font-size: 0.9rem; 
                         line-height: 20px;
                     }
                 }
                 .button-mail{
-                    padding: 0 0 50px 0;
+                    padding: 0 0 60px 0;
                     button{
                         width: 230px;
                         line-height: 17px;
@@ -166,7 +167,7 @@
                 }
                 .container-cafe{
                     width: 280px;
-                    padding: 0 30px 20px 30px;
+                    padding: 0 30px 30px 30px;
                     p{
                         font-size: 0.8rem;
                         margin: 0;

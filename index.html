@@ -18,8 +18,9 @@
     <div class="menu-modal" >
         <a class="cerrarModal" href="#servicios">Servicios</a>
         <a class="cerrarModal" href="#Programas">Programas</a>
-        <a class="cerrarModal" href="./nosotros.html">Nosotros</a>                    
+        <a class="cerrarModal" href="#nosotros">Nosotros</a>                    
         <a class="cerrarModal" href="#contacto">Contacto</a>
+        <a href=""><button>Compartinos tu CV</button></a>
     </div>
 
     <nav class="navbar">
@@ -28,14 +29,14 @@
                 <img src="./img/logo.webp" alt="">
                 <h2>YOUNG JOB</h2>
             </div>
-            <div class="menu">
-                <a href="#servicios">Servicios</a>
-                <a href="#Programas">Programas</a>
-                <a href="#Nosotros">Nosotros</a>                    
-                <a href="#contacto">Contacto</a>
+            <div id="menu" class="menu">
+                <a class="navbar-list" href="#servicios">Servicios</a>
+                <a class="navbar-list" href="#Programas">Programas</a>
+                <a class="navbar-list" href="#nosotros">Nosotros</a>                    
+                <a class="navbar-list" href="#contacto">Contacto</a>
             </div>
             <button id="button" class="buttonBurguer btn-burger"  aria-label="Main Menu" >
-                <svg width="25" height="25" viewBox="0 0 100 100">
+                <svg width="40" height="40" viewBox="0 0 100 100">
                 <path class="line line1" d="M 20,29.000046 H 80.000231 
                 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 
                 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 
@@ -60,14 +61,16 @@
                     <div class="container-hero">
                         <h3 class="slogan">Concreta tus sueños
                             nosotros te impulsamos</h3>
-                        <a href=""><button>Contactanos</button></a>
-                        
+                        <div class="container-btn">
+                            <a href="https://api.whatsapp.com/send?phone=5493874405250&text=Young%20Job%20quisiera%20contactarme%20con%20ustedes"><button>Quiero mas info</button></a>
+                            <a href=""><button class="btn-orange">Compartinos tu CV</button></a>
+                        </div>                        
                     </div>
                 </div>
             </div>
         </header>
 
-        <section id="servicios" class="servicios">
+        <section id="servicios" class="servicios menu-list">
             <div class="container-title">
                 <h4>Servicios</h4>
                 <div class="line"></div>
@@ -77,7 +80,7 @@
                     acordes a las necesidades e intereses de nuestros clientes. Colaboramos potenciando a las personas
                     extendiendo su perfil para lograr sus objetivos laborales y personales.
                     <br><strong>¡Trabajemos juntos!</strong> 
-                    </p>
+                </p>
             </div>
             <div class="container-main">
                 <div class="cards">
@@ -126,14 +129,84 @@
                         </div>
                     </div>
             </div>
-            
         </section>
 
+        <section id="nosotros" class="nosotros">
+            <div class="container-title">
+                <h4>Nosotros</h4>
+                <div class="line"></div>
+            </div>
+            <div class="text">
+                <p>Te presentamos el equipo Young Job, que trabaja codo a codo con tu empresa para obtener los mejores resultados. 
+                    No olvidamos la parte que más nos nutre como profesionales de recursos humanos y te acompañamos en el proceso que suele ser estresante para transformarlo en la oportunidad que estás esperando.
+                    </p>
+            </div>
+            <main>
+
+                <div class="container-perfil">
+                    <div class="izq">
+                        
+                        <img src="./img/marines.jpg" alt="">
+
+                    </div>
+                    <div class="der">
+                        <h4>Marines Diaz</h4>
+                        <p>Co-Funder de Young Job Lic. en RRHH, IT Recruiting, me destaco captando talentos, vinculando personas y organizaciones. sociable , con una gran capacidad de escucha y empatía. Adoro trabajar en equipo y aprender de los demás.</p>
+                        <div class="line-right"></div>
+                        <div class="line-bottom"></div>
+                        <div class="linkedin">
+                            <svg aria-hidden="true" class="global-nav__logo" xmlns="http://www.w3.org/2000/svg" width="34" height="34" data-supported-dps="34x34" focusable="false">
+                                <g transform="scale(.7083)" fill="none" fill-rule="evenodd">
+                                  <rect class="bug-text-color" fill="#FFF" x="1" y="1" width="46" height="46" rx="4"></rect>
+                                  <path d="M0 4.01A4.01 4.01 0 014.01 0h39.98A4.01 4.01 0 0148 4.01v39.98A4.01 4.01 0 0143.99 48H4.01A4.01 4.01 0 010 43.99V4.01zM19 18.3h6.5v3.266C26.437 19.688 28.838 18 32.445 18 39.359 18 41 21.738 41 28.597V41.3h-7V30.159c0-3.906-.937-6.109-3.32-6.109-3.305 0-4.68 2.375-4.68 6.109V41.3h-7v-23zM7 41h7V18H7v23zm8-30.5a4.5 4.5 0 11-9 0 4.5 4.5 0 019 0z" class="background" fill="#0077B5"></path>
+                                </g>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-perfil-revers">
+                    <div class="izq">
+                        <h4>Cecilia Pizarro<span></span></h4>
+                        <p>Coaching apasionada por efectivizar procesos de transformación personal y profesional. Mi papel dentro de la consultora se basa en acompañar al equipo de profesionales y a los jóvenes clientes.</p>
+                        <div class="line-right"></div>
+                        <div class="line-bottom"></div>
+                        <svg aria-hidden="true" class="global-nav__logo" xmlns="http://www.w3.org/2000/svg" width="34" height="34" data-supported-dps="34x34" focusable="false">
+                            <g transform="scale(.7083)" fill="none" fill-rule="evenodd">
+                              <rect class="bug-text-color" fill="#FFF" x="1" y="1" width="46" height="46" rx="4"></rect>
+                              <path d="M0 4.01A4.01 4.01 0 014.01 0h39.98A4.01 4.01 0 0148 4.01v39.98A4.01 4.01 0 0143.99 48H4.01A4.01 4.01 0 010 43.99V4.01zM19 18.3h6.5v3.266C26.437 19.688 28.838 18 32.445 18 39.359 18 41 21.738 41 28.597V41.3h-7V30.159c0-3.906-.937-6.109-3.32-6.109-3.305 0-4.68 2.375-4.68 6.109V41.3h-7v-23zM7 41h7V18H7v23zm8-30.5a4.5 4.5 0 11-9 0 4.5 4.5 0 019 0z" class="background" fill="#0077B5"></path>
+                            </g>
+                        </svg>
+                    </div>
+                    <div class="der">
+                        <img src="./img/cecilia.jpg" alt="">
+                    </div>
+                </div>
+                <div class="container-perfil">
+                    <div class="izq">
+                        <img src="./img/marines.jpg" alt="">
+                    </div>
+                    <div class="der">
+                        <h4>Cecilia Pizarro</h4>
+
+                        <p>Co-Funder de Young Job Lic. en RRHH, IT Recruiting, me destaco captando talentos, vinculando personas y organizaciones. sociable , con una gran capacidad de escucha y empatía. Adoro trabajar en equipo y aprender de los demás.</p>
+                        <div class="line-right"></div>
+                        <div class="line-bottom"></div>
+                        <svg aria-hidden="true" class="global-nav__logo" xmlns="http://www.w3.org/2000/svg" width="34" height="34" data-supported-dps="34x34" focusable="false">
+                            <g transform="scale(.7083)" fill="none" fill-rule="evenodd">
+                              <rect class="bug-text-color" fill="#FFF" x="1" y="1" width="46" height="46" rx="4"></rect>
+                              <path d="M0 4.01A4.01 4.01 0 014.01 0h39.98A4.01 4.01 0 0148 4.01v39.98A4.01 4.01 0 0143.99 48H4.01A4.01 4.01 0 010 43.99V4.01zM19 18.3h6.5v3.266C26.437 19.688 28.838 18 32.445 18 39.359 18 41 21.738 41 28.597V41.3h-7V30.159c0-3.906-.937-6.109-3.32-6.109-3.305 0-4.68 2.375-4.68 6.109V41.3h-7v-23zM7 41h7V18H7v23zm8-30.5a4.5 4.5 0 11-9 0 4.5 4.5 0 019 0z" class="background" fill="#0077B5"></path>
+                            </g>
+                        </svg>
+                    </div>
+                </div>
+            </main>
+        </section>
+    
         <section class="quote">
             <canvas id="canvas-basic"></canvas>
                 <blockquote>
                     <img class="quote-izq" src="./img/comilla.svg" alt="">
-                    <p>Sueños reales, procesos humanísticos</p>
+                    <p>LLeguemos juntos a la cima</p>
                     <img class="quote-der" src="./img/comilla.svg" alt="">
                 </blockquote>
 
@@ -150,7 +223,7 @@
                  <p>Podras ponerte en contacto directo a travez de cualquier plataforma de lunes a viernes de 9 a 18 hs Argentina.</p> 
                 </div>
                 <div class="button-mail">
-                    <button onclick="location.href='mailto:joungjob@gmail.com';">Envianos un mail haciendo click aqui</button>
+                    <button onclick="location.href='mailto:joungjob@gmail.com';">Envianos tu mail</button>
                 </div>
                 <div class="container-cafe">
                     <p>¡Conocenos a travéz de nuestras redes sociales y tomamos un café virtual!<span><img src="./img/cafe.png" alt=""></span></p>
@@ -175,5 +248,6 @@
             <p>© Copyrigth 2020 | Young Job</p>
         </section>
     </div>
+    <script src="./js/plugin.js"></script>
 </body>
 </html>

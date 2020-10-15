@@ -5,11 +5,20 @@
     display: flex;
     padding: 0;
     outline: none;
-    width: 2em;
     display:none;
     @include respon(mobile){ 
         display: flex;
+        justify-content: center;
+        align-items: center;
         margin: 0 20px 0 0;
+        width: 40px;
+        height: 40px;
+        &:focus:before{
+          opacity: 0;
+        }
+        &:hover:before {
+          opacity: 0;
+        }
     }
   }
 

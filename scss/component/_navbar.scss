@@ -29,11 +29,12 @@
             text-align: center;
             align-items: center;
             overflow: hidden;
+            transition: all 0.5s ease;
             a{
                 text-decoration: none;
                 color:#f7efc0;
                 letter-spacing: 2px;
-                transition: all 0.19s ;
+                transition: all 0.5s ease;
             }
             a:hover{
                 text-shadow: 3px -2px 3px rgb(81,10,10);
@@ -55,25 +56,30 @@
         .container{
             .logo{
                 img{
-                    width: 50px;
-                    margin: 4px 0 4px 45px;
+                    width: 58px;
+                    margin: 4px 3px 4px 25px;
                 }
                 h2{
                     margin: 0 0 0 10px;
-                    font-size: 1rem;
+                    font-size: 1.4rem;
                 }
             }
             .menu{
                 margin: 0 30px 0 0;
                 a{  
                     width: 100px;
-                    padding: 0 5px;
-                    font-size: 0.8rem;
+                    padding: 0 27px;
+                    font-size: 1rem;
                 }
                 a:hover{
                     font-weight: bold;
                     color: #fffcee;
                 }
+                .active-list{
+                    color: #222222;
+                    font-size: 5rem;
+                    padding: 0 40px 0 0;
+                  }
             }
         }
     }
@@ -85,11 +91,11 @@
             height: 50px;
             .logo{
                 img{
-                    width: 40px;
-                    margin: 5px 15px 5px 15px;
+                    width: 55px;
+                    margin: 2px 15px 2px 15px;
                 }
                 h2{
-                    font-size: 0.9rem;
+                    font-size: 1.3rem;
                 }
             }
             .menu{

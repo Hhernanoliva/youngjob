@@ -16,13 +16,16 @@ header{
         position: relative;
         .container{
             width: 100%;
-            height: 100%;
-            display: table;
+            height: 100vh;
             .container-hero{
+                width: 100%;
+                height: 100vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
                 background-attachment: fixed;
                 text-align: center;
-                display: table-cell;
-                vertical-align: middle;
                 width: 100%;
                 background-color: rgba(40, 11, 63, 0.56);
                 background-blend-mode: overlay;
@@ -31,36 +34,40 @@ header{
                     color: rgb(228, 228, 228);
                     text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.2);
                 }
-                a{
+                .container-btn{
                     display: flex;
                     justify-content: center;
                     align-items: center;
-                    text-decoration: none;
-                    button{
-                        appearance:inherit;
-                        border: none;
-                        background-color: transparent;
-                        outline: none;
-                        text-transform: uppercase;
-                        font-weight: bold;
-                        //color: $negro;
-                        color: $blanco;
-                        cursor: pointer;
-                        //background-color: #ffee00e1;
-                        background-color: rgba(111,64,106,0.9);
-                        //text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.5);
-                        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
-                        border-radius: 6px;
-                        box-shadow: 3px 5px 7px 0px rgba(94, 93, 0, 0.39);
-                    }
-                    button:hover{
-                        border: none;
-                        outline: none;
-                    }
-                    button:active{
-                        border: none;
-                        outline: none;
-                        box-shadow: 7px 10px 8px 0px rgba(94, 93, 0, 0.301);
+                    flex-direction: column;
+                    a{
+                        text-decoration: none;
+                        button{
+                            appearance:inherit;
+                            border: none;
+                            background-color: transparent;
+                            outline: none;
+                            text-transform: uppercase;
+                            color: $blanco;
+                            cursor: pointer;
+                            background-color: rgba(111,64,106,0.9);
+                            text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+                            border-radius: 6px;
+                            font-size: 0.9rem;
+                            line-height: 20px;
+                            letter-spacing: 1px;
+                            box-shadow: rgba(255, 255, 255, 0.18) 1px 1px 1px;
+                            border: solid 1px #fff;
+                        }
+                        button:hover{
+                            border: none;
+                            outline: none;
+                        }
+                        button:active{
+                            border: none;
+                            outline: none;
+                            box-shadow: 7px 10px 8px 0px rgba(94, 93, 0, 0.301);
+                        }
+
                     }
                 }
             }
@@ -78,20 +85,30 @@ header{
 
                     .slogan{
                         font-size: 3rem;
-                        padding: 10px 50px;
+                        padding: 40px 50px;
                     }
-                    a{
-
-                        button{
-                            height: 64px;
-                            padding: 1.1em 1.2em;
-                            font-size: 1.2rem;
-                        }
-                        button:active{
-                            padding: 1.07em 1.17m;
-                            font-size: 1.17rem;
+                    .container.hero{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        flex-direction: column;
+                    }
+                    .container-btn{
+                          flex-direction: row;  
+                        a{
+                            width: 400px;
+                            margin: 0 20px;
+                            button{
+                                height: 50px;
+                                font-size: 1rem;
+                            }
+                            button:active{
+                                padding: 1.07em 1.17m;
+                                font-size: 1.17rem;
+                            }
                         }
                     }
+                    
                 }
             }
         }
@@ -114,13 +131,18 @@ header{
                         padding: 40% 18px 0 18px;
                         font-size: 1.7rem;
                     }
-                    a{
-                        button{
-                            font-size: 0.9rem;
-                            padding: 0.9em 1em;
-                            margin: 0 0 50% 0;
+                    .container-btn{
+                        margin: 0 0 20% 0;
+                        a{
+                            margin: 40px 0 0 0;
+                            button{
+                                font-size: 0.9rem;
+                                padding: 0.9em 1em;
+
+                            }
                         }
                     }
+                    
                 }
             }
         }

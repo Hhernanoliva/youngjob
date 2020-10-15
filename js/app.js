@@ -1,3 +1,4 @@
+
 const load = () => {
     const navbar = document.querySelector(".navbar");
     const header = document.querySelector(".header");
@@ -7,6 +8,7 @@ const load = () => {
     const overlayActive = document.querySelector(".activeOverlay");
     const cerrarModal = document.querySelectorAll(".cerrarModal");
     const btnBurger = document.querySelector('.btn-burger');
+
 
     // Sticky NavBar
     window.addEventListener('scroll', function(){
@@ -21,12 +23,13 @@ const load = () => {
         overlay.classList.toggle('activeOverlay');
 
     });
+    // Cerrar Modal Burger
     cerrarModal.forEach(modal => {
         modal.addEventListener('click', () => {
             btnBurger.classList.remove('opened');
             menuModal.classList.remove('activeModal');
             overlay.classList.remove('activeOverlay');
-            console.log("ASFJKFLAJSJLFKAS")
+            return
         });
     })
 
@@ -65,7 +68,10 @@ const load = () => {
 
         }
     });
+    return
+} // Fin OnLoad()
 
-}
 
 
+
+    

@@ -21,13 +21,40 @@
         justify-content: center;
         align-items: center;
         height: 100px;
-        width: 100px;
+        width: 300px;
         color: white;
         text-decoration: none;
-        margin: 0 auto;
+        margin: 0 0;
         font-size: 1.5rem;
         &:active{
             font-size: 1.4rem;  
+        }
+        button{
+            appearance:inherit;
+            border: none;
+            background-color: transparent;
+            outline: none;
+            text-transform: uppercase;
+            color: $blanco;
+            cursor: pointer;
+            background-color: #da867dcc;
+            text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+            border-radius: 6px;
+            font-size: 0.9rem;
+            line-height: 20px;
+            letter-spacing: 1px;
+            box-shadow: rgba(255, 255, 255, 0.18) 1px 1px 1px;
+            border: solid 1px #fff;
+
+        }
+        button:hover{
+            border: none;
+            outline: none;
+        }
+        button:active{
+            border: none;
+            outline: none;
+            box-shadow: 7px 10px 8px 0px rgba(94, 93, 0, 0.301);
         }
     }
 }

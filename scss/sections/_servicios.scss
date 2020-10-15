@@ -3,6 +3,7 @@
 
 .servicios {
     background-color: rgb(245, 245, 245);
+    box-shadow: rgba(0, 0, 0, 0.18) 2px 2px 2px;
     .container-title{
         h4{
             font-family: 'Sansita Swashed', cursive;
@@ -63,7 +64,7 @@
     }
     
     @include respon(tablet){
-        padding: 65px 0 0 0;
+        padding: 90px 0 0 0;
         .container-title{
             padding: 0 80px;
             h4{
@@ -80,7 +81,7 @@
             padding: 45px 0 60px 0;
             p{
                 width: 820px;
-                font-size: 1.2rem;
+                font-size: 1rem;
                 letter-spacing: 1px;
                 line-height: 28px;
                 margin: 0 0 10px 0;
@@ -131,7 +132,7 @@
     }
 
     @include respon(mobile){
-        padding: 70px 10px 20px 10px ;
+        padding: 70px 10px 40px 10px ;
         .container-title{
             padding: 0px 0 0 20px;
             h4{
@@ -144,8 +145,8 @@
         }
         .container-text{
             p{
-                padding: 3px 20px 0 20px;
-                font-size: 0.95rem;
+                padding: 20px 20px 0 20px;
+                font-size: 1.1rem;
                 line-height: 22px;
             }
         }

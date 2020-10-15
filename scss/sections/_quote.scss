@@ -2,6 +2,7 @@
 @import "../variable/colors";
 
 .quote {
+    box-shadow: rgba(0, 0, 0, 0.18) 2px 2px 2px;
     position: relative;
     width: 100%;
     #canvas-basic{
@@ -35,6 +36,7 @@
         }
     }
     @include respon(tablet){
+        margin: 85px 0 0 0;
         blockquote{
             height: 140px;
             margin: 0;
@@ -52,6 +54,7 @@
         }
     }
     @include respon(mobile){
+        margin: 70px 0 0 0;
         blockquote{
             height: 100px;
             margin: 0;
