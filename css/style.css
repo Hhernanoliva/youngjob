@@ -100,12 +100,11 @@ header {
         padding: 40% 18px 0 18px;
         font-size: 1.7rem; }
       header .hero .container .container-hero .container-btn {
-        margin: 0 0 20% 0; }
+        margin: 0 0 25% 0; }
         header .hero .container .container-hero .container-btn a {
           margin: 40px 0 0 0; }
           header .hero .container .container-hero .container-btn a button {
-            font-size: 0.9rem;
-            padding: 0.9em 1em; } }
+            font-size: 0.9rem; } }
 
 .servicios {
   background-color: whitesmoke;
