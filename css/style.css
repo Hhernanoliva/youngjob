@@ -699,19 +699,19 @@ header {
 
 .servicio-page {
   padding: 80px 50px 50px 50px;
-  background-color: whitesmoke; }
+  background-color: #f5f5f5; }
   .servicio-page .container-servicio {
     background-color: #fff; }
-    .servicio-page .container-servicio .empresa {
+    .servicio-page .container-servicio .contenido {
       display: flex;
       justify-content: space-around; }
-      .servicio-page .container-servicio .empresa .izq {
+      .servicio-page .container-servicio .contenido .izq {
         width: 100%;
         min-width: 300px;
         padding: 0 15px 0 30px; }
-        .servicio-page .container-servicio .empresa .izq h5 {
+        .servicio-page .container-servicio .contenido .izq h5 {
           margin: 5px 0; }
-      .servicio-page .container-servicio .empresa .der {
+      .servicio-page .container-servicio .contenido .der {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -719,29 +719,43 @@ header {
         max-width: 400px;
         min-width: 190px;
         padding: 0 10px; }
-        .servicio-page .container-servicio .empresa .der img {
+        .servicio-page .container-servicio .contenido .der img {
           width: 100%; }
   @media (min-width: 767px) {
     .servicio-page {
-      padding: 80px 50px 50px 50px; }
-      .servicio-page .container-servicio .empresa .izq {
-        width: 100%;
-        min-width: 300px;
-        padding: 0 15px 0 30px; }
-        .servicio-page .container-servicio .empresa .izq h3 {
-          margin: 0 0 10px 0; }
-        .servicio-page .container-servicio .empresa .izq h5 {
-          margin: 5px 0; }
-      .servicio-page .container-servicio .empresa .der {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        max-width: 400px;
-        min-width: 190px;
-        padding: 0 10px; }
-        .servicio-page .container-servicio .empresa .der img {
-          width: 100%; } }
+      padding: 80px 50px 80px 50px; }
+      .servicio-page .container-servicio {
+        margin: 0 0 50px 0; }
+        .servicio-page .container-servicio .contenido {
+          padding: 40px 0 40px 0;
+          box-shadow: rgba(0, 0, 0, 0.18) 2px 2px 2px;
+          border-top: 1px inset rgba(0, 0, 0, 0.08);
+          border-left: 1px inset rgba(0, 0, 0, 0.08); }
+          .servicio-page .container-servicio .contenido .izq {
+            width: 100%;
+            min-width: 300px;
+            padding: 0 15px 0 30px; }
+            .servicio-page .container-servicio .contenido .izq h3 {
+              width: 125px;
+              margin: 0 0 25px 0;
+              border-bottom: solid 1px #da867d;
+              font-size: 1.6rem; }
+            .servicio-page .container-servicio .contenido .izq h5 {
+              margin: 5px 0;
+              font-size: 1.1rem; }
+            .servicio-page .container-servicio .contenido .izq p {
+              font-size: 0.9rem;
+              line-height: 22px; }
+          .servicio-page .container-servicio .contenido .der {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            max-width: 400px;
+            min-width: 190px;
+            padding: 0 10px; }
+            .servicio-page .container-servicio .contenido .der img {
+              width: 100%; } }
   @media (max-width: 767px) {
     .servicio-page {
       padding: 80px 50px 50px 50px;
@@ -750,16 +764,16 @@ header {
         background-color: #fff;
         display: flex;
         flex-direction: column; }
-        .servicio-page .container-servicio .empresa {
+        .servicio-page .container-servicio .contenido {
           display: flex;
           flex-direction: column; }
-          .servicio-page .container-servicio .empresa .der {
+          .servicio-page .container-servicio .contenido .der {
             display: flex;
             justify-content: center;
             align-items: center;
             width: 100%;
             max-width: 400px; }
-            .servicio-page .container-servicio .empresa .der img {
+            .servicio-page .container-servicio .contenido .der img {
               width: 100%; } }
 
 .menu-modal {
