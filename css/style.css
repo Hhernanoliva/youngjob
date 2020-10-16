@@ -348,11 +348,20 @@ header {
       .nosotros main .container-perfil .der {
         position: relative; }
         .nosotros main .container-perfil .der h4 {
+          position: relative;
           display: inline-flex;
           margin: 0;
           letter-spacing: 0.9px;
-          font-weight: bold;
-          border-bottom: 0.1px solid #da867d; }
+          font-weight: bold; }
+          .nosotros main .container-perfil .der h4 .line {
+            position: absolute;
+            bottom: -1px;
+            left: 0;
+            width: 125px;
+            height: 0.1px;
+            background: #da867d; }
+          .nosotros main .container-perfil .der h4 .linkedin-card {
+            margin: 0 0 0 30px; }
         .nosotros main .container-perfil .der p {
           font-weight: lighter;
           line-height: 20px; }
@@ -382,6 +391,15 @@ header {
           margin: 0;
           letter-spacing: 0.9px;
           font-weight: bold; }
+          .nosotros main .container-perfil-revers .izq h4 .line-revers {
+            position: absolute;
+            bottom: -1px;
+            right: 0;
+            width: 115px;
+            height: 0.1px;
+            background: #da867d; }
+          .nosotros main .container-perfil-revers .izq h4 .linkedin-card {
+            margin: 0 30px 0 0; }
         .nosotros main .container-perfil-revers .izq p {
           font-weight: lighter;
           line-height: 20px; }
@@ -426,8 +444,11 @@ header {
           margin: 0 2em 2em 0;
           font-size: 1rem; }
         .nosotros main .container-perfil .der h4 {
+          display: flex;
+          align-items: center;
           font-size: 1.1rem;
-          margin: 0 0 5px 0; }
+          margin: 0 0 5px 0;
+          vertical-align: center; }
         .nosotros main .container-perfil .der .line-right {
           height: 50px;
           width: 2px; }
@@ -444,7 +465,7 @@ header {
       .nosotros main .container-perfil-revers .izq {
         width: 350px; }
         .nosotros main .container-perfil-revers .izq p {
-          height: 120px;
+          height: 100px;
           margin: 0 0 2em 2em;
           font-size: 1rem;
           text-align: right; }
@@ -455,18 +476,6 @@ header {
           font-size: 1.1rem;
           margin: 0 0 5px 1.8em;
           border: none; }
-          .nosotros main .container-perfil-revers .izq h4 span {
-            position: absolute;
-            bottom: -1px;
-            right: 0;
-            width: 135px;
-            height: 0.1px;
-            background: #da867d; }
-        .nosotros main .container-perfil-revers .izq svg {
-          position: absolute;
-          align-self: right;
-          bottom: 8px;
-          right: 0; }
         .nosotros main .container-perfil-revers .izq .line-right {
           height: 50px;
           width: 2px; }
@@ -509,11 +518,6 @@ header {
           .nosotros main .container-perfil .der p {
             margin: 0 2em 3em 0;
             font-size: 1rem; }
-          .nosotros main .container-perfil .der svg {
-            position: absolute;
-            align-self: right;
-            bottom: 8px;
-            left: 0; }
           .nosotros main .container-perfil .der .line-right {
             height: 50px;
             width: 2px; }
@@ -543,18 +547,6 @@ header {
             font-size: 1.1rem;
             margin: 0 0 5px 1.8em;
             border: none; }
-            .nosotros main .container-perfil-revers .izq h4 span {
-              position: absolute;
-              bottom: -1px;
-              right: 0;
-              width: 135px;
-              height: 0.1px;
-              background: #da867d; }
-          .nosotros main .container-perfil-revers .izq svg {
-            position: absolute;
-            align-self: right;
-            bottom: 8px;
-            right: 0; }
           .nosotros main .container-perfil-revers .izq .line-right {
             height: 50px;
             width: 2px; }
@@ -705,6 +697,71 @@ header {
     .footer {
       maring: 0;
       padding: 0 0 30px 0; } }
+
+.servicio-page {
+  padding: 80px 50px 50px 50px;
+  background-color: whitesmoke; }
+  .servicio-page .container-servicio {
+    background-color: #fff; }
+    .servicio-page .container-servicio .empresa {
+      display: flex;
+      justify-content: space-around; }
+      .servicio-page .container-servicio .empresa .izq {
+        width: 100%;
+        min-width: 300px;
+        padding: 0 15px 0 30px; }
+        .servicio-page .container-servicio .empresa .izq h5 {
+          margin: 5px 0; }
+      .servicio-page .container-servicio .empresa .der {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        max-width: 400px;
+        min-width: 190px;
+        padding: 0 10px; }
+        .servicio-page .container-servicio .empresa .der img {
+          width: 100%; }
+  @media (min-width: 767px) {
+    .servicio-page {
+      padding: 80px 50px 50px 50px; }
+      .servicio-page .container-servicio .empresa .izq {
+        width: 100%;
+        min-width: 300px;
+        padding: 0 15px 0 30px; }
+        .servicio-page .container-servicio .empresa .izq h3 {
+          margin: 0 0 10px 0; }
+        .servicio-page .container-servicio .empresa .izq h5 {
+          margin: 5px 0; }
+      .servicio-page .container-servicio .empresa .der {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        max-width: 400px;
+        min-width: 190px;
+        padding: 0 10px; }
+        .servicio-page .container-servicio .empresa .der img {
+          width: 100%; } }
+  @media (max-width: 767px) {
+    .servicio-page {
+      padding: 80px 50px 50px 50px;
+      background-color: whitesmoke; }
+      .servicio-page .container-servicio {
+        background-color: #fff;
+        display: flex;
+        flex-direction: column; }
+        .servicio-page .container-servicio .empresa {
+          display: flex;
+          flex-direction: column; }
+          .servicio-page .container-servicio .empresa .der {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            max-width: 400px; }
+            .servicio-page .container-servicio .empresa .der img {
+              width: 100%; } }
 
 .menu-modal {
   position: fixed;

@@ -1,0 +1,110 @@
+@import "../variable/font-size";
+@import "../variable/colors";
+@import "../mixin/respon";
+
+.servicio-page{
+    padding: 80px 50px 50px 50px;
+    background-color: rgb(245, 245, 245);
+    .container-servicio{
+        background-color: #fff;
+        .empresa{
+            display: flex;
+            justify-content: space-around;
+            .izq{
+                width:100%;
+                min-width: 300px;
+                padding: 0 15px 0 30px;
+                h5{
+                    margin: 5px 0;
+                }
+            }
+            .der{
+                display: flex;
+                justify-content:center;
+                align-items: center;
+                width: 100%;
+                max-width: 400px;
+                min-width: 190px;
+                padding: 0 10px;
+                img{
+                    width: 100%;
+                }
+            }
+        }
+        .personalizado{
+
+        }
+        .educacion{
+
+        }
+    }
+    @include respon(tablet){
+        padding: 80px 50px 50px 50px;
+        .container-servicio{
+            .empresa{
+                .izq{
+                width:100%;
+                min-width: 300px;
+                padding: 0 15px 0 30px;
+                    h3{ 
+                        margin: 0 0 10px 0;    
+                    }
+                    h5{
+                        margin: 5px 0;
+                    }
+                }
+                .der{
+                    display: flex;
+                    justify-content:center;
+                    align-items: center;
+                    width: 100%;
+                    max-width: 400px;
+                    min-width: 190px;
+                    padding: 0 10px;
+                    img{
+                        width: 100%;
+                    }
+                }
+            }
+            .personalizado{
+    
+            }
+            .educacion{
+    
+            }
+        }
+     }
+    @include respon(mobile){
+        padding: 80px 50px 50px 50px;
+        background-color: rgb(245, 245, 245);
+        .container-servicio{
+            background-color: #fff;
+            display: flex;
+            flex-direction: column;
+            .empresa{
+                display: flex;
+                flex-direction: column;
+                .izq{
+                    
+                
+                }
+                .der{
+                    display: flex;
+                    justify-content:center;
+                    align-items: center;
+                    width: 100%;
+                    max-width: 400px;
+                    img{
+                        width: 100%;
+                    }
+                }
+            }
+            .personalizado{
+    
+            }
+            .educacion{
+    
+            }
+        }
+     }
+}
