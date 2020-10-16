@@ -432,16 +432,15 @@ header {
         width: 600px;
         margin: 0; }
     .nosotros main .container-perfil {
-      padding: 0 100px;
       margin: 80px 0 0 0; }
       .nosotros main .container-perfil .izq {
         margin: 0 50px 0 0; }
         .nosotros main .container-perfil .izq img {
           width: 150px; }
       .nosotros main .container-perfil .der {
-        width: 350px; }
+        width: 800px; }
         .nosotros main .container-perfil .der p {
-          margin: 0 2em 2em 0;
+          margin: 10px 2em 2em 0;
           font-size: 1rem; }
         .nosotros main .container-perfil .der h4 {
           display: flex;
@@ -456,17 +455,16 @@ header {
           height: 2px;
           width: 100px; }
     .nosotros main .container-perfil-revers {
-      padding: 0 100px;
       margin: 80px 0 0 0; }
       .nosotros main .container-perfil-revers .der {
         margin: 0 0 0 50px; }
         .nosotros main .container-perfil-revers .der img {
           width: 150px; }
       .nosotros main .container-perfil-revers .izq {
-        width: 350px; }
+        width: 800px; }
         .nosotros main .container-perfil-revers .izq p {
           height: 100px;
-          margin: 0 0 2em 2em;
+          margin: 10px 0 2em 2em;
           font-size: 1rem;
           text-align: right; }
         .nosotros main .container-perfil-revers .izq h4 {
@@ -514,7 +512,7 @@ header {
           position: relative; }
           .nosotros main .container-perfil .der h4 {
             font-size: 1.1rem;
-            margin: 0 0 5px 0; }
+            margin: 5px 0 5px 0; }
           .nosotros main .container-perfil .der p {
             margin: 0 2em 3em 0;
             font-size: 1rem; }
@@ -539,7 +537,8 @@ header {
           .nosotros main .container-perfil-revers .izq p {
             text-align: right;
             font-size: 1rem;
-            margin: 0 0 3em 0; }
+            margin: 5px 0 3em 0;
+            padding: 0 0 5px 0; }
           .nosotros main .container-perfil-revers .izq h4 {
             position: relative;
             display: block;
