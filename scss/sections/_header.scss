@@ -1,144 +1,146 @@
 @import "./scss/mixin/respon";
-
+@import "../variable/colors";
+@font-face {
+    font-family: "Lemon Milk";
+    src: url(../../font/LemonMilk.otf);
+    }
 header{
     position: relative;
-    .navbar{
-        overflow: hidden;
-        position: fixed;
-        top: 0; 
-        width: 100%;
-        background-color:#d28e5f;
-        z-index: 10;
-        .container{
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            width: 100%;
-            .logo{
-                display:flex;
-                align-items: center;
-                img{
-                    width: 100%;
-                }
-            }
-            .menu{
-
-            }
-        }
+    
+    .background{
+        background: transparent; 
+        transition: all 0.5s ease;
     }
-
-
     .hero{
         height: 100vh;
         position: relative;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-attachment: fixed;
         .container{
             width: 100%;
-            height: 100%;
-            display: table;
+            height: 100vh;
             .container-hero{
-                text-align: center;
-                display: table-cell;
-                vertical-align: middle;
                 width: 100%;
-                padding-right: 15px;
-                padding-left: 15px;
-                margin-right: auto;
-                margin-left: auto;
-                
-            }
-        }
-    }
-   /* .hero:before {
-        content: "";
-        position: fixed;
-        left: 0;
-        right: 0;
-        z-index: -1;
-        display: block;
-        background-image: url("./img/hero.png");
-        background-repeat: no-repeat;
-        background-size: cover;
-        -webkit-filter: blur(5px);
-        -moz-filter: blur(5px);
-        -o-filter: blur(5px);
-        -ms-filter: blur(5px);
-        filter: blur(5px);
-    }*/
+                height: 100vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                background-attachment: fixed;
+                text-align: center;
+                width: 100%;
+                background-color: rgba(40, 11, 63, 0.56);
+                background-blend-mode: overlay;
+                h3{
+                    font-style: italic;
+                    color: rgb(228, 228, 228);
+                    text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.2);
+                }
+                .container-btn{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                    a{
+                        text-decoration: none;
+                        button{
+                            appearance:inherit;
+                            border: none;
+                            background-color: transparent;
+                            outline: none;
+                            text-transform: uppercase;
+                            color: $blanco;
+                            cursor: pointer;
+                            background-color: rgba(111,64,106,0.9);
+                            text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+                            border-radius: 6px;
+                            font-size: 0.9rem;
+                            line-height: 20px;
+                            letter-spacing: 1px;
+                            box-shadow: rgba(255, 255, 255, 0.18) 1px 1px 1px;
+                            border: solid 1px #fff;
+                        }
+                        button:hover{
+                            border: none;
+                            outline: none;
+                        }
+                        button:active{
+                            border: none;
+                            outline: none;
+                            box-shadow: 7px 10px 8px 0px rgba(94, 93, 0, 0.301);
+                        }
 
-    @include respon(tablet){
-        .navbar{
-            .container{
-                padding: 10px 15px;
-                .logo{
-                    img{
-                        width: 80px;
                     }
                 }
             }
         }
+    }
+
+    @include respon(tablet){ ///////////////////// TABLET
         .hero{
             .container{
+                box-shadow: 0px 1px 5px 3px rgba(88, 70, 136, 0.5);
                 .container-hero{
+                    background-image: url(../../img/hero-tablet.jpg);
+                    background-size: cover;
+                    background-position: center;
+
+                    .slogan{
+                        font-size: 3rem;
+                        padding: 40px 50px;
+                    }
+                    .container.hero{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        flex-direction: column;
+                    }
+                    .container-btn{
+                          flex-direction: row;  
+                        a{
+                            width: 400px;
+                            margin: 0 20px;
+                            button{
+                                height: 50px;
+                                font-size: 1rem;
+                            }
+                            button:active{
+                                padding: 1.07em 1.17m;
+                                font-size: 1.17rem;
+                            }
+                        }
+                    }
                     
                 }
             }
         }
     }
-    @include respon(desktop){
-        .navbar{
-            .container{
-                .logo{
-                    img{}
-                }
-            }
-        }
-        .hero{
-            .container{
-                .container-hero{}
-            }
-        }
-    }
 
-    @include respon(mobile){
-        .navbar{
-            .container{
-                padding: 10px 15px;
-                .logo{
-                    img{
-                        width: 60px;
-                    }
-                }
-                .menu{
-                    display: none;
-                }
-            }
-        }
+    @include respon(mobile){ ///////// MOBILE
         .hero{
             .container{
                 .container-hero{
+                    background-image: url(../../img/hero-mobile.jpg);
+                    background-size: cover;
+                    background-position: center;
+                    background-color: rgba(40, 11, 63, 0.56);
+                    background-blend-mode: overlay;
+                    height: 100vh;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
                     .slogan{
-                        font-size: 1.9rem;
+                        padding: 40% 18px 0 18px;
+                        font-size: 1.7rem;
                     }
-                    a{
-                        button{
-                            appearance:inherit;
-                            border: none;
-                            background-color: transparent;
-                            outline: none
-                        }
-                        button:hover{
-                            border: none;
-                            outline: none
-                        }
-                        button:active{
-                            border: none;
-                            outline: none
+                    .container-btn{
+                        margin: 0 0 25% 0;
+                        a{
+                            margin: 40px 0 0 0;
+                            button{
+                                font-size: 0.9rem;
+                            }
                         }
                     }
+                    
                 }
             }
         }

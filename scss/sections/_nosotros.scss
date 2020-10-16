@@ -2,120 +2,321 @@
 @import "../variable/colors";
 @import "../mixin/respon";
 .nosotros{
-    width: 100%;
-    .container-title{
-        .title{
-            h4{
-                margin: 0;
-            }
-            .line{
-                border-bottom: 5px solid #cdbef6;
-                width: 400px;
-                margin: 0 0 0 -250px; 
-            }
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    .container-title{   
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        h4{
+            font-family: 'Sansita Swashed', cursive;
         }
-        .info{
-            align-items: center;
-        }
-    }
-    .container-cards{
-        .card{
-            .img{
-                img{}
-            }
+        .line{
+            border-bottom: 5px solid #cdbef6;
+            box-shadow: rgba(0, 0, 0, 0.18) 2px 2px 2px;
         }
     }
-    
-
-    @include respon(desktop){
-        .container-title{
-            .title{
-                h4{}
-                .line{}
-            }
-            .info{}
-        }
-        .container-cards{
-            .card{
-                .img{
-                    width: 80px;
-                    height: 80px;
-                    border-radius: 150%;
-                    overflow: hidden;
-                    img{
-                        width: 100%;
-                    }
-                }
-                .text{
-                    h3{}
-                    p{}
-                    .detail{}
-                }
-            }
+    .text{
+        p{
+            letter-spacing: 0.9px;
+            line-height: 22px;
         }
     }
-
-    @include respon(tablet){
-        .container-title{
-            .title{
-                h4{}
-                .line{}
-            }
-            .info{}
-        }
-        .container-cards{
-            .card{
-                .img{
-                    width: 80px;
-                    height: 80px;
-                    border-radius: 150%;
-                    overflow: hidden;
-                    img{
-                        width: 100%;
-                    } 
-                }
-                .text{
-                    h3{}
-                    p{}
-                    .detail{}
-                }
-            }
-        }
-    }
-
-    @include respon(mobile){
-        .container-title{
-            .title{
-                h4{}
-                .line{}
-            }
-            .info{}
-        }
-        .container-cards{
-
-            .card{
+    main{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        .container-perfil{
+            display: flex;
+            justify-content: center;
+            align-items: center;  
+            .izq{
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                flex-direction: column;
-                .img{
-                    width: 80px;
-                    height: 80px;
-                    border-radius: 150%;
-                    overflow: hidden;
-                    img{
-                        width: 100%;
+                img{
+                    box-shadow: -15px -15px 2px 2px rgba(125,83,121,0.7);
+                }
+            }
+            .der{
+                position: relative;
+                h4{
+                    position: relative;
+                    display: inline-flex;
+                    margin: 0;
+                    letter-spacing: 0.9px;
+                    font-weight: bold;
+                    .line{
+                        position: absolute;
+                        bottom: -1px;
+                        left: 0;
+                        width: 125px;
+                        height: 0.1px;
+                        background:  #da867d;
+                    }
+                    .linkedin-card{
+                        margin: 0 0 0 30px;
                     }
                 }
-                .text{
-                    h3{
+                p{
+                    font-weight: lighter;
+                    line-height: 20px;
+                }
+                .line-right{
+                    position: absolute;
+                    bottom: 0;
+                    right: 0;
+                    background:  rgb(125,83,121);
+
+                }
+                .line-bottom{
+                    position: absolute;
+                    bottom: 0;
+                    right: 0;
+                    background:  rgb(125,83,121);
+
+                }
+            }
+        }
+        .container-perfil-revers{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .der{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                img{
+                    box-shadow: 15px -15px 2px 2px rgba(125,83,121,0.7);
+                }
+            }
+            .izq{
+                position: relative;
+                h4{
+                    margin: 0;
+                    letter-spacing: 0.9px;
+                    font-weight: bold;
+                    .line-revers{
+                        position: absolute;
+                        bottom: -1px;
+                        right: 0;
+                        width: 115px;
+                        height: 0.1px;
+                        background:  #da867d;
+                    }
+                    .linkedin-card{
+                        margin: 0 30px 0 0;
+                    }
+                }
+                p{
+                    font-weight: lighter;
+                    line-height: 20px;
+                }
+                .line-right{
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    background:  rgb(125,83,121);
+                }
+                .line-bottom{
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    background:  rgb(125,83,121);
+                }
+            }
+        }
+    }
+    @include respon(tablet){    
+        .container-title{   
+            padding: 90px 0 0 0;
+            h4{
+                font-size: 2rem;
+                margin: 0;
+            }
+            .line{
+                width: 200px;
+                height: 5px;
+            }
+        }
+        .text{
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            width: 100%;
+            margin: 40px 0 0 0;
+            p{
+                width: 600px;
+                margin: 0;
+            }
+        }
+        main{
+            .container-perfil{
+                padding: 0 100px; 
+                margin: 80px 0 0 0;  
+                .izq{
+                    margin: 0 50px 0 0;
+                    img{
+                        width: 150px;
+                    }
+                }
+                .der{
+                    width: 350px;
+                    p{
+                        margin: 0 2em 2em 0;
                         font-size: 1rem;
                     }
-                    p{
-                        
-                        font-size: 0.9rem;
+                    h4{
+                        display: flex;
+                        align-items: center;
+                        font-size: 1.1rem;
+                        margin: 0 0 5px 0;
+                        vertical-align: center;
                     }
-                    .detail{}
+
+                    .line-right{
+                        height: 50px;
+                        width: 2px;
+                    }
+                    .line-bottom{
+                        height: 2px;
+                        width: 100px;
+                    }
+                }
+            }
+            .container-perfil-revers{
+                padding: 0 100px;  
+                margin: 80px 0 0 0;  
+                .der{
+                    margin: 0 0 0 50px;
+                    img{
+                        width: 150px;
+                    }
+                }
+                .izq{
+                    width: 350px;
+                    p{
+                        height: 100px;
+                        margin: 0 0 2em 2em;
+                        font-size: 1rem;
+                        text-align: right;
+                    }
+                    h4{
+                        position: relative;
+                        display: block;
+                        text-align: right;
+                        font-size: 1.1rem;
+                        margin: 0 0 5px 1.8em;
+                        border: none;
+                    }
+                    .line-right{
+                        height: 50px;
+                        width: 2px;
+                    }
+                    .line-bottom{
+                        height: 2px;
+                        width: 100px;
+                    }
+                }
+            }
+        }
+    }
+    @include respon(mobile){
+        .container-title{   
+            padding: 70px 0 0 0;
+            h4{
+                font-size: 1.5rem;
+                margin: 0 0 10px 0;
+            }
+            .line{
+                width: 150px;
+                height: 5px;
+            }
+        }
+        .text{
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            width: 100%;
+            margin: 40px 0 0 0;
+            p{
+                width: 300px;
+                margin: 0;
+            }
+        }
+        main{
+            flex-direction: column;
+            .container-perfil{
+                flex-direction: column;
+                .izq{
+                    margin: 70px 0 0 0;
+                    img{
+                        width: 150px;
+                    }
+                }
+                .der{
+                    margin: 20px 0 0 0;
+                    width: 300px;
+                    position: relative;
+                    h4{
+                        font-size: 1.1rem;
+                        margin: 0 0 5px 0;
+
+                    }
+                    p{
+                        margin: 0 2em 3em 0;
+                        font-size: 1rem;
+                    }
+                    .line-right{
+                        height: 50px;
+                        width: 2px;
+                    }
+                    .line-bottom{
+                        height: 2px;
+                        width: 100px;
+                    }
+                }
+            }
+            .container-perfil-revers{
+                flex-direction: column;
+                .der{
+                    margin: 65px 0 20px 0;
+                    img{
+                        width: 150px;
+                    }
+                }
+                .izq{
+                    order: 1;
+                    width: 300px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    p{
+                        text-align: right;
+                        font-size: 1rem;
+                        margin: 0 0 3em 0;
+                    }
+                    h4{
+                        position: relative;
+                        display: block;
+                        text-align: right;
+                        font-size: 1.1rem;
+                        margin: 0 0 5px 1.8em;
+                        border: none;
+                    }
+
+                    .line-right{
+                        height: 50px;
+                        width: 2px;
+                    }
+                    .line-bottom{
+                        height: 2px;
+                        width: 100px;
+                    }
                 }
             }
         }
