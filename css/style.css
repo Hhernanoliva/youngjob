@@ -746,6 +746,11 @@ header {
             .servicio-page .container-servicio .contenido .izq p {
               font-size: 0.9rem;
               line-height: 22px; }
+            .servicio-page .container-servicio .contenido .izq h1 {
+              margin: 10px 0;
+              font-size: 1.1rem; }
+            .servicio-page .container-servicio .contenido .izq li {
+              font-size: 0.9rem; }
           .servicio-page .container-servicio .contenido .der {
             display: flex;
             justify-content: center;
@@ -974,6 +979,42 @@ body {
   font-family: 'Raleway', sans-serif;
   box-sizing: border-box; }
 
+p::selection {
+  background-color: rgba(123, 68, 107, 0.8);
+  color: #f5f5f5; }
+
+h1::selection {
+  background-color: rgba(123, 68, 107, 0.8);
+  color: #f5f5f5; }
+
+h2::selection {
+  background-color: rgba(123, 68, 107, 0.8);
+  color: #f5f5f5; }
+
+h3::selection {
+  background-color: rgba(123, 68, 107, 0.8);
+  color: #f5f5f5; }
+
+h4::selection {
+  background-color: rgba(123, 68, 107, 0.8);
+  color: #f5f5f5; }
+
+h5::selection {
+  background-color: rgba(123, 68, 107, 0.8);
+  color: #f5f5f5; }
+
+li::selection {
+  background-color: rgba(123, 68, 107, 0.8);
+  color: #f5f5f5; }
+
+span::selection {
+  background-color: rgba(123, 68, 107, 0.8);
+  color: #f5f5f5; }
+
+a::selection {
+  background-color: rgba(123, 68, 107, 0.8);
+  color: #f5f5f5; }
+
 button {
   --top: 50%;
   --left: 50%;
@@ -1028,3 +1069,8 @@ button:active:after {
   opacity: 0;
   transition: clip-path 0.3s cubic-bezier(0.55, 0.085, 0.68, 0.53), opacity 0.4s ease-in-out;
   transition-delay: -0.1s, 0.5s; }
+
+.arrow {
+  display: flex;
+  transform: scaleX(-1);
+  margin: 0 -60px 0 0; }

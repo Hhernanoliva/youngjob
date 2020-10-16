@@ -14,7 +14,46 @@ html {
 body {
     font-family: 'Raleway', sans-serif;
     box-sizing: border-box;
+    
 }
+p::selection{
+  background-color: rgba(123, 68, 107, 0.8);
+  color: $blanco;
+}
+h1::selection{
+  background-color: rgba(123, 68, 107, 0.8);
+  color: $blanco;
+}
+h2::selection{
+  background-color: rgba(123, 68, 107, 0.8);
+  color: $blanco;
+}
+h3::selection{
+  background-color: rgba(123, 68, 107, 0.8);
+  color: $blanco;
+}
+h4::selection{
+  background-color: rgba(123, 68, 107, 0.8);
+  color: $blanco;
+}
+h5::selection{
+  background-color: rgba(123, 68, 107, 0.8);
+  color: $blanco;
+}
+li::selection{
+  background-color: rgba(123, 68, 107, 0.8);
+  color: $blanco;
+}
+span::selection{
+  background-color: rgba(123, 68, 107, 0.8);
+  color: $blanco;
+}
+a::selection{
+  background-color: rgba(123, 68, 107, 0.8);
+  color: $blanco;
+}
+
+
 
 //BUTTON GENERAL
 button {
@@ -73,6 +112,12 @@ button:active:after {
   opacity: 0;
   transition: clip-path 0.3s cubic-bezier(0.55, 0.085, 0.68, 0.53), opacity 0.4s ease-in-out;
   transition-delay: -0.1s, 0.5s;
+}
+
+.arrow{
+  display: flex;
+  transform: scaleX(-1);
+  margin: 0 -60px 0 0;
 }
 
 
