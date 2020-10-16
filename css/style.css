@@ -438,7 +438,7 @@ header {
         .nosotros main .container-perfil .izq img {
           width: 150px; }
       .nosotros main .container-perfil .der {
-        width: 800px; }
+        width: 600px; }
         .nosotros main .container-perfil .der p {
           margin: 10px 2em 2em 0;
           font-size: 1rem; }
@@ -461,10 +461,9 @@ header {
         .nosotros main .container-perfil-revers .der img {
           width: 150px; }
       .nosotros main .container-perfil-revers .izq {
-        width: 800px; }
+        width: 600px; }
         .nosotros main .container-perfil-revers .izq p {
-          height: 100px;
-          margin: 10px 0 2em 2em;
+          margin: 10px 0 1.4em 2em;
           font-size: 1rem;
           text-align: right; }
         .nosotros main .container-perfil-revers .izq h4 {
