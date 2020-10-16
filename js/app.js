@@ -63,7 +63,7 @@ const load = () => {
                     ['#a07e97', '#936787'],
                     ['#fc68af', '#fa9dca']
                 ],
-                transitionSpeed: 3000
+                transitionSpeed: 2000
             }
 
         }
