@@ -40,6 +40,11 @@
                 text-shadow: 3px -2px 3px rgb(81,10,10);
 
             }
+            .servicio-arrow{
+                a{
+
+                }
+            }
         }
         @import "../component/button";
     }
@@ -52,16 +57,16 @@
 }
 @include respon(tablet){ ///////////////////// TABLET
     .navbar{
-        padding: 5px 0;
+        padding: 4px 0;
         .container{
             .logo{
                 img{
-                    width: 58px;
-                    margin: 4px 3px 4px 25px;
+                    width: 55px;
+                    margin: 2px 3px 2px 25px;
                 }
                 h2{
                     margin: 0 0 0 10px;
-                    font-size: 1.4rem;
+                    font-size: 1.33rem;
                 }
             }
             .menu{
@@ -95,7 +100,7 @@
                     margin: 2px 15px 2px 15px;
                 }
                 h2{
-                    font-size: 1.3rem;
+                    font-size: 1rem;
                 }
             }
             .menu{
