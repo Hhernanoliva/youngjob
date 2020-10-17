@@ -114,10 +114,8 @@ button:active:after {
   transition-delay: -0.1s, 0.5s;
 }
 
-.arrow{
-  display: flex;
-  transform: scaleX(-1);
-  margin: 0 -60px 0 0;
+a {
+  text-decoration: none;
 }
 
 

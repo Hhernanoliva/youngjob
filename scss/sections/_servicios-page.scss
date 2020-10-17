@@ -2,6 +2,7 @@
 @import "../variable/colors";
 @import "../mixin/respon";
 
+
 .servicio-page{
     background-color: #f5f5f5;
     li {
@@ -146,3 +147,56 @@
         }
      }
 }
+@include respon(mobile){
+    .navbar{
+        .container{
+            .logo{
+                .logo-servicios{
+                    width: 50px;
+                    margin: 2px 3px 2px 10px;
+                }
+                h2{
+                    margin: 0 0 0 10px;
+                    font-size: 1.33rem;
+                }
+            }
+            .menu-servicios{
+                display:flex;
+                justify-content: center;
+                text-align: center;
+                align-items: center;
+                overflow: hidden;
+                transition: all 0.5s ease;
+                a{
+                    text-decoration: none;
+                    color:#f7efc0;
+                    letter-spacing: 2px;
+                    transition: all 0.5s ease;
+                    margin: 0 10px 0 0;
+                }
+                a:hover{
+                    text-shadow: 3px -2px 3px rgb(81,10,10);
+    
+                }
+                .servicio-arrow{
+                    .arrow{
+                        display: flex;
+                        transform: scaleX(-1);
+                        margin: 0 5px 0 0;
+                        
+                      }
+                    a{
+           
+                    }
+                }
+            }
+        }
+    }
+}
+.arrow{
+    display: flex;
+    transform: scaleX(-1);
+    margin: 0 -60px 0 0;
+  }
+
+ 
