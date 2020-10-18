@@ -801,6 +801,29 @@ header {
             .servicio-page .container-servicio .contenido .der img {
               display: none; } }
 
+@media (min-width: 767px) {
+  .navbar .container .menu-servicios {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    overflow: hidden;
+    transition: all 0.5s ease; }
+    .navbar .container .menu-servicios a {
+      text-decoration: none;
+      color: #f7efc0;
+      letter-spacing: 2px;
+      transition: all 0.5s ease;
+      margin: 0 10px 0 0; }
+    .navbar .container .menu-servicios .volver {
+      margin: 0 60px 0 0; }
+    .navbar .container .menu-servicios a:hover {
+      text-shadow: 3px -2px 3px #510a0a; }
+    .navbar .container .menu-servicios .servicio-arrow .arrow {
+      display: flex;
+      transform: scaleX(-1);
+      margin: 0 5px 0 0; } }
+
 @media (max-width: 767px) {
   .navbar .container .logo .logo-servicios {
     width: 50px;
