@@ -60,15 +60,23 @@ const load = () => {
             "default-state": {
                 gradients: [
                     ['#9c3468', '#806c7e'],
-                    ['#a07e97', '#936787'],
+                    ['#da867d', '#936787'],
                     ['#fc68af', '#ba4c55']
                 ],
-                transitionSpeed: 2000
+                transitionSpeed: 1400
             }
 
         }
     });
-    return
+    AOS.init({
+        delay: 100, // values from 0 to 3000, with step 50ms
+        duration: 800, // values from 0 to 3000, with step 50ms
+        easing: 'line', // default easing for AOS animations
+      
+      });
+      var lazyLoad = new LazyLoad({
+
+      });
 } // Fin OnLoad()
 
 

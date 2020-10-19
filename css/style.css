@@ -108,7 +108,7 @@ header {
 
 .servicios {
   background-color: whitesmoke;
-  box-shadow: rgba(0, 0, 0, 0.18) 2px 2px 2px; }
+  box-shadow: rgba(0, 0, 0, 0.18) 5px 5px 5px; }
   .servicios .container-title h4 {
     font-family: 'Sansita Swashed', cursive;
     margin: 0;
@@ -116,7 +116,7 @@ header {
     font-weight: 700;
     letter-spacing: 1.2px; }
   .servicios .container-title .line {
-    border-bottom: 5px solid #cdbef6;
+    border-bottom: 5px solid #da867d;
     width: 400px;
     margin: 0 0 0 -250px;
     box-shadow: rgba(0, 0, 0, 0.18) 2px 2px 2px;
@@ -154,7 +154,7 @@ header {
           text-align: center; }
   @media (min-width: 767px) {
     .servicios {
-      padding: 90px 0 0 0; }
+      padding: 80px 0 0 0; }
       .servicios .container-title {
         padding: 0 80px; }
         .servicios .container-title h4 {
@@ -164,7 +164,7 @@ header {
         display: flex;
         justify-content: center;
         width: 100%;
-        padding: 45px 0 60px 0; }
+        padding: 25px 0 40px 0; }
         .servicios .container-text p {
           width: 820px;
           font-size: 1rem;
@@ -253,7 +253,7 @@ header {
           flex-direction: column; } }
 
 .quote {
-  box-shadow: rgba(0, 0, 0, 0.18) 2px 2px 2px;
+  box-shadow: rgba(0, 0, 0, 0.18) 5px 5px 5px;
   position: relative;
   width: 100%; }
   .quote #canvas-basic {
@@ -318,13 +318,14 @@ header {
   flex-direction: column; }
   .nosotros .container-title {
     display: flex;
-    justify-content: center;
+    justify-content: right;
     align-items: center;
     flex-direction: column; }
     .nosotros .container-title h4 {
       font-family: 'Sansita Swashed', cursive; }
     .nosotros .container-title .line {
-      box-shadow: rgba(0, 0, 0, 0.18) 2px 2px 2px; }
+      border-bottom: 5px solid #da867d;
+      box-shadow: rgba(0, 0, 0, 0.18) 1px 1px 1px; }
   .nosotros .text p {
     letter-spacing: 0.9px;
     line-height: 22px; }
@@ -407,13 +408,14 @@ header {
           background: #7d5379; }
   @media (min-width: 767px) {
     .nosotros .container-title {
-      padding: 90px 0 0 0; }
+      padding: 80px 0 0 0; }
       .nosotros .container-title h4 {
         font-size: 2rem;
         margin: 0; }
       .nosotros .container-title .line {
         width: 200px;
-        height: 5px; }
+        height: 5px;
+        margin: 5px 0 0 0; }
     .nosotros .text {
       display: flex;
       justify-content: center;
@@ -545,7 +547,10 @@ header {
             width: 100px; } }
 
 .contacto {
-  background-color: #f5f5f5; }
+  background-color: #f5f5f5;
+  box-shadow: rgba(0, 0, 0, 0.18) 5px 5px 5px;
+  border-top: 1px inset rgba(0, 0, 0, 0.08);
+  border-left: 1px inset rgba(0, 0, 0, 0.08); }
   .contacto .container-title h4 {
     font-family: 'Sansita Swashed', cursive;
     margin: 0;
@@ -553,7 +558,7 @@ header {
     font-weight: 700;
     letter-spacing: 1.2px; }
   .contacto .container-title .line {
-    border-bottom: 5px solid #cdbef6;
+    border-bottom: 5px solid #da867d;
     width: 400px;
     margin: 0 0 0 -250px;
     box-shadow: rgba(0, 0, 0, 0.18) 2px 2px 2px;
@@ -568,7 +573,7 @@ header {
       justify-content: center;
       align-items: center;
       flex-direction: column;
-      background-color: #d2e7ff94;
+      background-color: #fff;
       border-radius: 3px;
       box-shadow: rgba(0, 0, 0, 0.18) 2px 2px 2px;
       border-top: 1px inset rgba(0, 0, 0, 0.08);
@@ -597,7 +602,7 @@ header {
     .contacto {
       padding: 0 50px; }
       .contacto .container-title {
-        padding: 88px 0 0 0; }
+        padding: 70px 0 0 0; }
         .contacto .container-title h4 {
           padding: 0 30px;
           margin: 0 0 5px 0;
@@ -606,7 +611,7 @@ header {
           width: 400px;
           margin: 0 0 0 -220px; }
       .contacto .center {
-        padding: 70px 0; }
+        padding: 60px 0 120px 0; }
         .contacto .center .container {
           padding: 0 50px 10px 50px;
           width: 610px; }
@@ -1052,13 +1057,6 @@ header {
       font-size: 1rem; }
     .navbar .container .menu {
       display: none; } }
-
-h4 {
-  opacity: 0;
-  transition: opacity 0.5s; }
-
-.h4rev {
-  opacity: 1; }
 
 html {
   scroll-behavior: smooth; }

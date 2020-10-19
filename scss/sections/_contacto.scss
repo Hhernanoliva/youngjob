@@ -4,6 +4,9 @@
 
 .contacto{
     background-color: #f5f5f5;
+    box-shadow: rgba(0, 0, 0, 0.18) 5px 5px 5px;
+    border-top: 1px inset rgba(0,0,0,.08);
+    border-left: 1px inset rgba(0,0,0,.08);
     .container-title{
         h4{
             font-family: 'Sansita Swashed', cursive;
@@ -13,7 +16,7 @@
             letter-spacing: 1.2px;
         }
         .line{
-            border-bottom: 5px solid #cdbef6;
+            border-bottom: 5px solid #da867d;
             width: 400px;
             margin: 0 0 0 -250px;
             box-shadow: rgba(0, 0, 0, 0.18) 2px 2px 2px;
@@ -30,7 +33,7 @@
             justify-content: center;
             align-items: center;
             flex-direction: column;
-            background-color: #d2e7ff94;
+            background-color: #fff;
             border-radius: 3px;
             box-shadow: rgba(0, 0, 0, 0.18) 2px 2px 2px;
             border-top: 1px inset rgba(0,0,0,.08);
@@ -72,7 +75,7 @@
     @include respon(tablet) {
         padding: 0 50px;
         .container-title{
-            padding: 88px 0 0 0;
+            padding: 70px 0 0 0;
             h4{
                 padding: 0 30px;
                 margin: 0 0 5px 0;
@@ -84,7 +87,7 @@
             }
         }
         .center{
-            padding: 70px 0;
+            padding: 60px 0 120px 0;
             .container{
                 padding: 0 50px 10px 50px;
                 width: 610px;
