@@ -74,6 +74,24 @@
                     button{
                         margin: 20px 0 0 0;
                     }
+                    #ebook{
+                        margin: 50px 0 10px 0;
+                    }    
+                    .ebooks{
+                        display: flex;
+                        #button-ebook{
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            height: 45px;
+                            margin: 10px 20px 0 0;
+                            .boton-corazon{
+                                width: 45px;
+                                margin: 0 0 0 15px;
+                            }
+                        }
+                    }
+                  
                 }
                 .der{
                     display: flex;
@@ -144,54 +162,51 @@
                 }
             }
         }
-     }
+    }
 }
 
 
 @include respon(tablet){   
     .navbar{
-    .container{
-        .logo{
-            .logo-servicios{
+        .container{
+            .logo{
+                .logo-servicios{
+                }
+                h2{
+                }
             }
-            h2{
-            }
-        }
-        .menu-servicios{
-            display:flex;
-            justify-content: center;
-            text-align: center;
-            align-items: center;
-            overflow: hidden;
-            transition: all 0.5s ease;
-            a{
-                text-decoration: none;
-                color:#f7efc0;
-                letter-spacing: 2px;
+            .menu-servicios{
+                display:flex;
+                justify-content: center;
+                text-align: center;
+                align-items: center;
+                overflow: hidden;
                 transition: all 0.5s ease;
-                margin: 0 10px 0 0;
-            }
-            .volver{
-                margin: 0 60px 0 0;
-            }
-            a:hover{
-                text-shadow: 3px -2px 3px rgb(81,10,10);
-
-            }
-            .servicio-arrow{
-                .arrow{
-                    display: flex;
-                    transform: scaleX(-1);
-                    margin: 0 5px 0 0;
-                    
-                  }
                 a{
-       
+                    text-decoration: none;
+                    color:#f7efc0;
+                    letter-spacing: 2px;
+                    transition: all 0.5s ease;
+                    margin: 0 10px 0 0;
+                }
+                .volver{
+                    margin: 0 60px 0 0;
+                }
+                a:hover{
+                    text-shadow: 3px -2px 3px rgb(81,10,10);
+
+                }
+                .servicio-arrow{
+                    .arrow{
+                        display: flex;
+                        transform: scaleX(-1);
+                        margin: 0 5px 0 0;
+                        
+                    }
                 }
             }
         }
     }
-}
 }
 
 
@@ -233,9 +248,6 @@
                         margin: 0 5px 0 0;
                         
                       }
-                    a{
-           
-                    }
                 }
             }
         }
@@ -245,6 +257,4 @@
     display: flex;
     transform: scaleX(-1);
     margin: 0 -60px 0 0;
-  }
-
- 
+}

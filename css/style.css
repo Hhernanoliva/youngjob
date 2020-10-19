@@ -535,7 +535,7 @@ header {
             display: block;
             text-align: right;
             font-size: 1.1rem;
-            margin: 0 0 5px 1.8em;
+            margin: 5px 0 5px 0;
             border: none; }
           .nosotros main .container-perfil-revers .izq .line-right {
             height: 50px;
@@ -740,6 +740,19 @@ header {
               font-size: 0.9rem; }
             .servicio-page .container-servicio .contenido .izq button {
               margin: 20px 0 0 0; }
+            .servicio-page .container-servicio .contenido .izq #ebook {
+              margin: 50px 0 10px 0; }
+            .servicio-page .container-servicio .contenido .izq .ebooks {
+              display: flex; }
+              .servicio-page .container-servicio .contenido .izq .ebooks #button-ebook {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 45px;
+                margin: 10px 20px 0 0; }
+                .servicio-page .container-servicio .contenido .izq .ebooks #button-ebook .boton-corazon {
+                  width: 45px;
+                  margin: 0 0 0 15px; }
           .servicio-page .container-servicio .contenido .der {
             display: flex;
             justify-content: center;
