@@ -535,7 +535,7 @@ header {
             display: block;
             text-align: right;
             font-size: 1.1rem;
-            margin: 0 0 5px 1.8em;
+            margin: 5px 0 5px 0;
             border: none; }
           .nosotros main .container-perfil-revers .izq .line-right {
             height: 50px;
