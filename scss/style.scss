@@ -7,14 +7,16 @@
 @import "./sections/servicios-page";
 @import "./component/menuModal";
 @import "./component/navbar";
+@import "./component/animations";
+
+
 
 html {
     scroll-behavior: smooth;
-  }
+}
 body {
     font-family: 'Raleway', sans-serif;
     box-sizing: border-box;
-    
 }
 p::selection{
   background-color: rgba(123, 68, 107, 0.8);
@@ -117,6 +119,5 @@ button:active:after {
 a {
   text-decoration: none;
 }
-
 
 
