@@ -1,0 +1,23 @@
+{
+  "name": "YoungJob",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hhernanoliva/youngjob.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Hhernanoliva/youngjob/issues"
+  },
+  "homepage": "https://github.com/Hhernanoliva/youngjob#readme",
+  "dependencies": {
+    "bounds.js": "^1.0.4"
+  }
+}
