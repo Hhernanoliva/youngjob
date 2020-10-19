@@ -634,7 +634,7 @@ header {
               width: 100%; } }
   @media (max-width: 767px) {
     .contacto {
-      padding: 70px 10px 0 10px; }
+      padding: 70px 10px 50px 10px; }
       .contacto .container-title {
         padding: 0px 0 0 20px; }
         .contacto .container-title h4 {
@@ -688,8 +688,7 @@ header {
     margin: 0.5em; }
   @media (max-width: 767px) {
     .footer {
-      padding: 0 0 30px 0;
-      margin: 40px 0 20px 0; } }
+      padding: 30px 0; } }
 
 .servicio-page {
   background-color: #f5f5f5; }
@@ -794,6 +793,61 @@ header {
             display: none; }
             .servicio-page .container-servicio .contenido .der img {
               display: none; } }
+
+@media (min-width: 767px) {
+  .navbar .container .menu-servicios {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    overflow: hidden;
+    transition: all 0.5s ease; }
+    .navbar .container .menu-servicios a {
+      text-decoration: none;
+      color: #f7efc0;
+      letter-spacing: 2px;
+      transition: all 0.5s ease;
+      margin: 0 10px 0 0; }
+    .navbar .container .menu-servicios .volver {
+      margin: 0 60px 0 0; }
+    .navbar .container .menu-servicios a:hover {
+      text-shadow: 3px -2px 3px #510a0a; }
+    .navbar .container .menu-servicios .servicio-arrow .arrow {
+      display: flex;
+      transform: scaleX(-1);
+      margin: 0 5px 0 0; } }
+
+@media (max-width: 767px) {
+  .navbar .container .logo .logo-servicios {
+    width: 50px;
+    margin: 2px 3px 2px 10px; }
+  .navbar .container .logo h2 {
+    margin: 0 0 0 10px;
+    font-size: 1.33rem; }
+  .navbar .container .menu-servicios {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    overflow: hidden;
+    transition: all 0.5s ease; }
+    .navbar .container .menu-servicios a {
+      text-decoration: none;
+      color: #f7efc0;
+      letter-spacing: 2px;
+      transition: all 0.5s ease;
+      margin: 0 10px 0 0; }
+    .navbar .container .menu-servicios a:hover {
+      text-shadow: 3px -2px 3px #510a0a; }
+    .navbar .container .menu-servicios .servicio-arrow .arrow {
+      display: flex;
+      transform: scaleX(-1);
+      margin: 0 5px 0 0; } }
+
+.arrow {
+  display: flex;
+  transform: scaleX(-1);
+  margin: 0 -60px 0 0; }
 
 .menu-modal {
   position: fixed;
@@ -1084,7 +1138,5 @@ button:active:after {
   transition: clip-path 0.3s cubic-bezier(0.55, 0.085, 0.68, 0.53), opacity 0.4s ease-in-out;
   transition-delay: -0.1s, 0.5s; }
 
-.arrow {
-  display: flex;
-  transform: scaleX(-1);
-  margin: 0 -60px 0 0; }
+a {
+  text-decoration: none; }
