@@ -1040,6 +1040,13 @@ header {
     .navbar .container .menu {
       display: none; } }
 
+h4 {
+  opacity: 0;
+  transition: opacity 0.5s; }
+
+.h4rev {
+  opacity: 1; }
+
 html {
   scroll-behavior: smooth; }
 
