@@ -59,9 +59,9 @@ const load = () => {
         states : {
             "default-state": {
                 gradients: [
-                    ['#854a7f', '#806c7e'],
+                    ['#9c3468', '#806c7e'],
                     ['#a07e97', '#936787'],
-                    ['#fc68af', '#fa9dca']
+                    ['#fc68af', '#ba4c55']
                 ],
                 transitionSpeed: 2000
             }
