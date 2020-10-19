@@ -324,7 +324,6 @@ header {
     .nosotros .container-title h4 {
       font-family: 'Sansita Swashed', cursive; }
     .nosotros .container-title .line {
-      border-bottom: 5px solid #cdbef6;
       box-shadow: rgba(0, 0, 0, 0.18) 2px 2px 2px; }
   .nosotros .text p {
     letter-spacing: 0.9px;
@@ -353,13 +352,6 @@ header {
           margin: 0;
           letter-spacing: 0.9px;
           font-weight: bold; }
-          .nosotros main .container-perfil .der h4 .line {
-            position: absolute;
-            bottom: -1px;
-            left: 0;
-            width: 125px;
-            height: 0.1px;
-            background: #da867d; }
           .nosotros main .container-perfil .der h4 .linkedin-card {
             margin: 0 0 0 30px; }
         .nosotros main .container-perfil .der p {
@@ -690,7 +682,10 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   padding: 30px 0; }
+  .footer p {
+    margin: 0.5em; }
   @media (max-width: 767px) {
     .footer {
       maring: 0;
@@ -732,7 +727,6 @@ header {
             .servicio-page .container-servicio .contenido .izq h3 {
               width: 125px;
               margin: 0 0 25px 0;
-              border-bottom: solid 1px #da867d;
               font-size: 1.6rem; }
             .servicio-page .container-servicio .contenido .izq h5 {
               margin: 5px 0;
