@@ -2,7 +2,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     padding: 30px 0;
+
+    p{
+        margin: 0.5em;  
+    }
     @include respon(mobile){
         maring: 0;
         padding: 0 0 30px 0;
