@@ -74,9 +74,6 @@ const load = () => {
         easing: 'line', // default easing for AOS animations
       
       });
-      var lazyLoad = new LazyLoad({
-
-      });
 } // Fin OnLoad()
 
 
