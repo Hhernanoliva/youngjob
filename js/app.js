@@ -73,6 +73,15 @@ const load = () => {
         easing: 'line', // default easing for AOS animations
       
       });
+
+      tippy('#copy', {
+        trigger: 'click',
+        hideOnClick: true,
+        content: '¡Copiado y listo para pegar!',
+        arrow: true,
+        placement: 'bottom',
+        
+      });
 } // Fin OnLoad()
 
 
