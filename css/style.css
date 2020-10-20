@@ -352,9 +352,12 @@ header {
           display: inline-flex;
           margin: 0;
           letter-spacing: 0.9px;
-          font-weight: bold; }
-          .nosotros main .container-perfil .der h4 .linkedin-card {
-            margin: 0 0 0 30px; }
+          font-weight: bold;
+          display: flex;
+          align-items: center; }
+          .nosotros main .container-perfil .der h4 span {
+            margin: 0 0 0 10px;
+            width: 20px; }
         .nosotros main .container-perfil .der p {
           font-weight: lighter;
           line-height: 20px; }
@@ -384,15 +387,11 @@ header {
           margin: 0;
           letter-spacing: 0.9px;
           font-weight: bold; }
-          .nosotros main .container-perfil-revers .izq h4 .line-revers {
-            position: absolute;
-            bottom: -1px;
-            right: 0;
-            width: 115px;
-            height: 0.1px;
-            background: #da867d; }
-          .nosotros main .container-perfil-revers .izq h4 .linkedin-card {
-            margin: 0 30px 0 0; }
+          .nosotros main .container-perfil-revers .izq h4 span {
+            margin: 0 0 0 10px;
+            width: 20px; }
+            .nosotros main .container-perfil-revers .izq h4 span img {
+              width: 20px; }
         .nosotros main .container-perfil-revers .izq p {
           font-weight: lighter;
           line-height: 20px; }
@@ -456,23 +455,29 @@ header {
           margin: 0 0 0 50px; }
           .nosotros main .container-perfil-revers .der img {
             width: 150px; }
-        .nosotros main .container-perfil-revers .izq p {
-          margin: 10px 0 1.4em 2em;
-          font-size: 1rem;
-          text-align: right; }
-        .nosotros main .container-perfil-revers .izq h4 {
-          position: relative;
-          display: block;
-          text-align: right;
-          font-size: 1.1rem;
-          margin: 0 0 5px 1.8em;
-          border: none; }
-        .nosotros main .container-perfil-revers .izq .line-right {
-          height: 50px;
-          width: 2px; }
-        .nosotros main .container-perfil-revers .izq .line-bottom {
-          height: 2px;
-          width: 100px; } }
+        .nosotros main .container-perfil-revers .izq {
+          display: inline-block;
+          float: right; }
+          .nosotros main .container-perfil-revers .izq p {
+            margin: 10px 0 1.4em 2em;
+            font-size: 1rem;
+            text-align: right; }
+          .nosotros main .container-perfil-revers .izq h4 {
+            position: relative;
+            text-align: right;
+            font-size: 1.1rem;
+            margin: 0 0 5px 1.8em;
+            border: none; }
+            .nosotros main .container-perfil-revers .izq h4 span {
+              margin: 0 0 -10px 0; }
+              .nosotros main .container-perfil-revers .izq h4 span img {
+                margin: 0 0 -3px 5px; }
+          .nosotros main .container-perfil-revers .izq .line-right {
+            height: 50px;
+            width: 2px; }
+          .nosotros main .container-perfil-revers .izq .line-bottom {
+            height: 2px;
+            width: 100px; } }
   @media (max-width: 767px) {
     .nosotros .container-title {
       padding: 70px 0 0 0; }
@@ -534,8 +539,9 @@ header {
             padding: 0 0 5px 0; }
           .nosotros main .container-perfil-revers .izq h4 {
             position: relative;
-            display: block;
-            text-align: right;
+            justify-content: right;
+            display: flex;
+            align-items: center;
             font-size: 1.1rem;
             margin: 5px 0 5px 0;
             border: none; }
@@ -885,15 +891,16 @@ header {
   overflow: hidden;
   user-select: none; }
   .menu-modal a {
+    margin: 15px 0 0 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100px;
+    height: 80px;
     width: 300px;
     color: white;
     text-decoration: none;
     margin: 0 0;
-    font-size: 1.5rem; }
+    font-size: 1.3rem; }
     .menu-modal a:active {
       font-size: 1.4rem; }
     .menu-modal a button {

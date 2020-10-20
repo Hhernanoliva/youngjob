@@ -69,8 +69,7 @@ const load = () => {
         }
     });
     AOS.init({
-        delay: 100, // values from 0 to 3000, with step 50ms
-        duration: 800, // values from 0 to 3000, with step 50ms
+        duration: 700, // values from 0 to 3000, with step 50ms
         easing: 'line', // default easing for AOS animations
       
       });
