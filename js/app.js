@@ -82,6 +82,8 @@ const load = () => {
         placement: 'bottom',
         
       });
+
+      new ClipboardJS('.btn-copy');
 } // Fin OnLoad()
 
 
