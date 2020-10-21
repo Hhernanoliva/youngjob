@@ -438,10 +438,13 @@ header {
           font-size: 1rem; }
         .nosotros main .container-perfil .der h4 {
           display: flex;
-          align-items: center;
           font-size: 1.1rem;
-          margin: 0 0 5px 0;
-          vertical-align: center; }
+          margin: 0 0 5px 0; }
+          .nosotros main .container-perfil .der h4 span {
+            margin: 0 0 10px 0; }
+            .nosotros main .container-perfil .der h4 span a img {
+              width: 30px;
+              margin: 0 0 -3px 10px; }
         .nosotros main .container-perfil .der .line-right {
           height: 50px;
           width: 2px; }
@@ -469,8 +472,9 @@ header {
             margin: 0 0 5px 1.8em;
             border: none; }
             .nosotros main .container-perfil-revers .izq h4 span {
-              margin: 0 0 -10px 0; }
-              .nosotros main .container-perfil-revers .izq h4 span img {
+              margin: 0 0 0px 0; }
+              .nosotros main .container-perfil-revers .izq h4 span a img {
+                width: 30px;
                 margin: 0 0 -3px 5px; }
           .nosotros main .container-perfil-revers .izq .line-right {
             height: 50px;

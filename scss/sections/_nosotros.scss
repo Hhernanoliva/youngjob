@@ -164,10 +164,17 @@
                     }
                     h4{
                         display: flex;
-                        align-items: center;
                         font-size: 1.1rem;
                         margin: 0 0 5px 0;
-                        vertical-align: center;
+                        span{
+                            margin: 0 0 10px 0;
+                            a{
+                                img{ 
+                                    width: 30px;
+                                    margin: 0 0 -3px 10px;
+                                }
+                            }   
+                        }
                     }
 
                     .line-right{
@@ -205,10 +212,13 @@
                         margin: 0 0 5px 1.8em;
                         border: none;
                         span{
-                            margin: 0 0 -10px 0;
-                            img{ 
-                                margin: 0 0 -3px 5px;
-                            }
+                            margin: 0 0 0px 0;
+                            a{
+                                img{ 
+                                    width: 30px;
+                                    margin: 0 0 -3px 5px;
+                                }
+                            }   
                         }
                     }
                     .line-right{
