@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="./css/style.css">
     <script type="text/javascript" src="./js/app.js"></script>
     <title>Young Job | Consultora de Recursos Humanos.</title>
+    <script type="text/javascript">const tlJsHost = ((window.location.protocol == "https:") ? "https://secure.trust-provider.com/" : "http://www.trustlogo.com/"); document.write(unescape("<script src='" + tlJsHost + "trustlogo/javascript/trustlogo.js' type='text/javascript' %3E%3C/script%3E"));</script>
     <script> (function(h,o,t,j,a,r){ h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)}; h._hjSettings={hjid:2056666,hjsv:6}; a=o.getElementsByTagName('head')[0]; r=o.createElement('script');r.async=1; r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv; a.appendChild(r); })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv='); </script>
 </head>
 <body onload="load()">
@@ -23,10 +24,10 @@
 
     <div class="menu-modal" >
         <a class="cerrarModal" href="#servicios">Servicios</a>
-        <a class="cerrarModal" href="./servicios.html#programas">Programas</a>
-        <a class="cerrarModal" href="#nosotros">Nosotros</a>                    
+        <a class="cerrarModal" href="#nosotros">Nosotros</a>  
+        <a class="cerrarModal" href="./programas.html">Programas</a>                  
         <a class="cerrarModal" href="#contacto">Contacto</a>
-        <a href=""><button onclick="location.href='mailto:joungjob@gmail.com';">Compartinos tu CV</button></a>
+        <a href=""><button class="btn-copy" onclick="location.href='mailto:joungjob@gmail.com';">Quiero enviar mi CV</button></a>
     </div>
 
     <!--NAVBAR-->
@@ -35,12 +36,12 @@
         <div class="container">
             <div class="logo">
                <a href="#header"> <img src="./img/logo.webp" alt=""></a>
-               <a href="#header"><h2>YOUNG JOB</h2></a>
+               <a href="#header"><h1 class="logo">Young Job</h1></a>
             </div>
             <div id="menu" class="menu">
                 <a class="navbar-list" href="#servicios">Servicios</a>
-                <a class="navbar-list" href="./servicios.html#programas">Programas</a>
-                <a class="navbar-list" href="#nosotros">Nosotros</a>                    
+                <a class="navbar-list" href="#nosotros">Nosotros</a> 
+                <a class="navbar-list" href="./programas.html">Programas</a>                   
                 <a class="navbar-list" href="#contacto">Contacto</a>
             </div>
             <button id="button" class="buttonBurguer btn-burger" aria-label="Main Menu" >
@@ -69,11 +70,13 @@
             <div class="hero">
                 <div class="container">
                     <div class="container-hero">
-                        <h3  class="slogan">Concreta tus sueños,
-                            nosotros te impulsamos</h3>
+                        <h1>Consultora de Recursos Humanos</h1>
+                        <!-- <h3  class="slogan">Concreta tus sueños,
+                            nosotros te impulsamos</h3> -->
                         <div class="container-btn">
-                            <a href="https://api.whatsapp.com/send?phone=5493874405250&text=Young%20Job%20quisiera%20contactarme%20con%20ustedes" target="_blank"><button>Quiero mas info</button></a>
-                            <a href=""><button class="btn-orange" onclick="location.href='mailto:joungjob@gmail.com';">Compartinos tu CV</button></a>
+                            <a href="https://api.whatsapp.com/send?phone=5493874405250&text=Young%20Job%20quisiera%20contactarme%20con%20ustedes" target="_blank">
+                                <button>Habla con nosotros</button></a>
+                            <!-- <a href=""><button class="btn-orange" onclick="location.href='mailto:joungjob@gmail.com';">Compartinos tu CV</button></a> -->
                         </div>                        
                     </div>
                 </div>
@@ -91,11 +94,11 @@
                 <p >Somos una consultora con profesionales radicados a lo largo de Argentina que propone diseñar estrategias,
                     acordes a las necesidades e intereses de nuestros clientes. Colaboramos potenciando a las personas
                     extendiendo su perfil para lograr sus objetivos laborales y personales.
-                    <br><strong>¡Trabajemos juntos!</strong> 
-                </p>
+                    <br><strong>¡Lleguemos juntos a la cima!</strong> 
+                </p >
             </div>
             <div class="container-main">
-                <div class="cards">
+                <div class="cards" >
                     <div class="container-card" data-aos="fade-up">
                         <div class="container-top">
                             <img src="./img/empresa.svg" alt="imagen representativa de servicio empresas">
@@ -103,13 +106,11 @@
                             <div class="line"></div>
                         </div>
                         <div class="container-content">
-                            <h3>Atracción de talento</h3>
-                            <h3>Ahorro de tiempo</h3>
-                            <h3>Metodologías Ágiles</h3>
-                            <h3>Feedback Garantizado</h3>
+                            <h3>Para incorporar personal, ofrecemos una estrategia eficiente
+                                de búsqueda empática y humanística.</h3>
                         </div>
                         <div class="container-btn">
-                            <a href="./servicios.html#textoempresa"><button>Más Información</button></a>
+                            <a href="./empresa.html#textoempresa"><button>Descrubre más</button></a>
                         </div>
                     </div>
                     <div class="container-card" data-aos="fade-up" data-aos-delay="150">
@@ -119,13 +120,11 @@
                             <div class="line"></div>
                         </div>
                         <div class="container-content">
-                            <h3>Asesoría Laboral</h3>
-                            <h3>Confeccion de CV</h3>
-                            <h3>Simulacro de entrevista</h3>
-                            <h3>Perfil de Linkedin</h3>
+                            <h3>Que tu cv no pase desapercibido, te acompañamos y
+                                mejoraramos tu perfil.</h3>
                         </div>
                         <div class="container-btn">
-                            <a href="./servicios.html#personales"><button>Más Información</button></a>
+                            <a href="./personalizado.html"><button>Descrubre más</button></a>
                         </div>
                     </div>
                     <div class="container-card" data-aos="fade-up" data-aos-delay="250">
@@ -135,12 +134,10 @@
                             <div class="line"></div>
                         </div>
                         <div class="container-content">
-                            <h3>Cursos</h3>
-                            <h3>Talleres Gratuitos</h3>
-                            <h3>E-Books</h3>
+                            <h3>Animate y conoce nuestra guia de cursos y talleres (gratuitos). <br> Tenemos E-books para descargar.</h3>
                         </div>
                         <div class="container-btn">
-                            <a href="./servicios.html#educacion"> <button>Más Información</button></a>
+                            <a href="./educacion.html"> <button>Descrubre más</button></a>
                         </div>
                     </div>
             </div>
@@ -165,7 +162,7 @@
                     </div>
                     <div class="der">
                         <h4>Belen Movia <span> <a href="https://www.linkedin.com/in/mar%C3%ADa-bel%C3%A9n-movia-/" target="_blank"><img src="./img/linkedin-card.svg" alt=""></a></span></h4>
-                        <p>Founder de Young Job, analista de RRHH, el foco de mi labor está puesto en la administración de personal y planificación estratégica. Me encargo de planificar, organizar, coordinar y controlar, los proyectos. Además, me desempeño como Recruiter IT y talent acquisition freelance. Soy una apasionada por la educación, comprometida con mi profesión para ayudar e impactar positivamente en la vida de otros.</p>
+                        <p>Founder de Young Job,  analista de Recursos Humanos, Recruiter IT, el foco de mi labor está puesto en la administración de personal y planificación estratégica. Apasionada por la educación, comprometida con mi profesión para ayudar e impactar positivamente en la vida de otros.</p>
                         <div class="line-right"></div>
                         <div class="line-bottom"></div>
                     </div>
@@ -174,8 +171,8 @@
                 <div class="container-perfil-revers" data-aos="fade-up">
                     <div class="izq">
                         <h4>Marines Diaz <span> <a href="https://www.linkedin.com/in/marinesdiaz/" target="_blank"><img src="./img/linkedin-card.svg" alt=""></a></span></h4>
-                         <p>Co-Founder de Young Job, Lic. en RRHH, en la consultora me encargo de la preparación y organización de los proyectos, además de coordinar y crear el contenido para nuestras redes sociales. 
-                             Actualmente me desempeño como Recruiter IT y talent acquisition freelance, colaboro en el proceso de búsqueda y atracción de talento entre la persona y la empresa. Sociable, con una gran capacidad de escucha y empatía, mi objetivo es contribuir desde mi profesión a mejorar las prácticas de RRHH.</p>
+                         <p>Co-Founder de Young Job, Lic. en RRHH. Recruiter IT y talent acquisition, me encanta colaborar en el proceso de búsqueda y atracción de talento entre la persona.
+                            Sociable, con gran capacidad de escucha y empatía, mi objetivo es contribuir desde mi profesión para mejorar las prácticas de RRHH.</p>
                          <div class="line-right"></div>
                          <div class="line-bottom"></div>
                     </div>
@@ -193,7 +190,7 @@
                         <h4>Cecilia Pizarro <span> <a href="https://www.linkedin.com/in/ceciliapizarro/" target="_blank"><img src="./img/linkedin-card.svg" alt=""></a></span></h4>
                            
                         <p>Coaching apasionada por efectivizar procesos de transformación personal y profesional. Hago hincapié en acompañar a un equipo de profesionales, como también a jóvenes que comienzan su camino. Considero que los sueños se trabajan, implementando energia positiva y constancia.  </p>
-                        <br>
+
                         <div class="line-right"></div>
                         <div class="line-bottom"></div>
                     </div>
@@ -207,10 +204,9 @@
             <canvas id="canvas-basic"></canvas>
                 <blockquote>
                     <img class="quote-izq" src="./img/comilla.svg" alt="comillas">
-                    <p>LLeguemos juntos a la cima</p>
+                    <p>Concreta tus sueños. <br> Nosotros te impulsamos</p>
                     <img class="quote-der" src="./img/comilla.svg" alt="comillas">
                 </blockquote>
-
         </section>
 
         <!--CONTACTO-->
@@ -227,6 +223,7 @@
                 </div>
                 <div class="button-mail">
                     <p>¡Hace click para copiar nuestro mail!</p><button id="copy" class="btn-copy" data-clipboard-text="joungjob@gmail.com">joungjob@gmail.com</button>
+                    <a href=""><button onclick="location.href='mailto:joungjob@gmail.com';" style="margin: 20px 0 0 0">Quiero enviar mi CV</button></a>
                 </div>
                 <div class="container-cafe">
                     <p>¡Conocenos en nuestras redes sociales y tomamos un café virtual!<span><img src="./img/cafe.png" alt=""></span></p>
