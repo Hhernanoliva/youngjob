@@ -1,0 +1,4 @@
+<IfModule mod_rewrite.c>
+   RewriteCond %{HTTPS} off
+   RewriteRule (.*) https://youngjob.com.ar/$1 [R=301,L,QSA]
+</IfModule>

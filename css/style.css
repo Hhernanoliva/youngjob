@@ -226,7 +226,7 @@ header {
           font-size: 1.5rem;
           margin: 0 0 7px 0; }
         .servicios .container-title .line {
-          margin: 0 0 0 -285px; }
+          margin: 5px 0 0 -285px; }
       .servicios .container-text p {
         padding: 20px 20px 0 20px;
         font-size: 1.1rem;
@@ -512,11 +512,11 @@ header {
       padding: 70px 0 0 30px; }
       .nosotros .container-title h4 {
         font-size: 1.5rem;
-        margin: 0 0 10px 0; }
+        margin: 0 0 3px 0; }
       .nosotros .container-title .line {
         width: 450px;
         height: 5px;
-        margin: 0 -320px; }
+        margin: 0 -336px; }
     .nosotros .text {
       display: flex;
       justify-content: center;
@@ -674,7 +674,7 @@ header {
           font-size: 2rem; }
         .contacto .container-title .line {
           width: 400px;
-          margin: 0 0 0 -220px; }
+          margin: 10px 0 0 -220px; }
       .contacto .center {
         padding: 60px 0 120px 0; }
         .contacto .center .container {
@@ -713,7 +713,7 @@ header {
           font-size: 1.5rem;
           margin: 0 0 7px 0; }
         .contacto .container-title .line {
-          margin: 0 0 0 -290px; }
+          margin: 5px 0 0 -290px; }
       .contacto .center {
         margin: 40px auto 10px;
         width: 300px; }
