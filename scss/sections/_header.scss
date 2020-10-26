@@ -29,10 +29,12 @@ header{
                 width: 100%;
                 background-color: rgba(40, 11, 63, 0.56);
                 background-blend-mode: overlay;
-                h3{
-                    font-style: italic;
+                h3, h1{
+                    font-weight: 700;
                     color: rgb(228, 228, 228);
-                    text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.2);
+                    // text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.2);
+                    text-shadow: 4px -2px 0px rgb(81,10,10);
+                    letter-spacing:2px;
                 }
                 .container-btn{
                     display: flex;
@@ -42,6 +44,7 @@ header{
                     a{
                         text-decoration: none;
                         button{
+                            font-weight: 600;
                             appearance:inherit;
                             border: none;
                             background-color: transparent;
@@ -49,14 +52,13 @@ header{
                             text-transform: uppercase;
                             color: $blanco;
                             cursor: pointer;
-                            background-color: rgba(111,64,106,0.9);
-                            text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+                            background-color: #e53935;
+                            text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
                             border-radius: 6px;
                             font-size: 0.9rem;
                             line-height: 20px;
                             letter-spacing: 1px;
                             box-shadow: rgba(255, 255, 255, 0.18) 1px 1px 1px;
-                            border: solid 1px #fff;
                         }
                         button:hover{
                             border: none;
@@ -82,10 +84,20 @@ header{
                     background-image: url(../../img/hero-tablet.jpg);
                     background-size: cover;
                     background-position: center;
-
-                    .slogan{
-                        font-size: 3rem;
-                        padding: 40px 50px;
+                    // .slogan{
+                    //     font-size: 2rem;
+                    //     padding: 20px 50px 40px 50px;
+                    //     margin: 0;
+                    // }
+                    h1{
+                        font-size: 2.8rem;
+                        margin: 0 0 60px 0;
+                    }
+                    .logo{
+                        font-family: "Lemon Milk";
+                        letter-spacing: 3px;
+                        color:#f7efc0;
+                        text-shadow: 4px -2px 0px rgb(81,10,10);
                     }
                     .container.hero{
                         display: flex;
@@ -94,10 +106,10 @@ header{
                         flex-direction: column;
                     }
                     .container-btn{
-                          flex-direction: row;  
+                        flex-direction: row;  
                         a{
                             width: 400px;
-                            margin: 0 20px;
+                            margin: 0 20px 50px 0;
                             button{
                                 height: 50px;
                                 font-size: 1rem;
@@ -126,13 +138,12 @@ header{
                     height: 100vh;
                     display: flex;
                     flex-direction: column;
-                    justify-content: space-between;
-                    .slogan{
-                        padding: 40% 18px 0 18px;
-                        font-size: 1.7rem;
+                    h1{
+                        padding: 15% 18px 0 18px;
+                        font-size: 1.8rem;
                     }
                     .container-btn{
-                        margin: 0 0 25% 0;
+                        margin: 10px 0 25% 0;
                         a{
                             margin: 40px 0 0 0;
                             button{

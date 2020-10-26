@@ -16,10 +16,9 @@
             letter-spacing: 1.2px;
         }
         .line{
-            border-bottom: 5px solid #da867d;
+            border-bottom: 5px solid #ffeb3b;
             width: 400px;
-            margin: 0 0 0 -250px;
-            box-shadow: rgba(0, 0, 0, 0.18) 2px 2px 2px;
+            margin: 10px 0 0 -250px;
             border-top: 1px inset rgba(0,0,0,.08);
             border-left: 1px inset rgba(0,0,0,.08);
         }
@@ -49,8 +48,21 @@
                 align-items: center;
                 flex-direction: column;
                 button{
+                    font-weight: 600;
+                    appearance: inherit;
+                    border: none;
+                    background-color: transparent;
+                    outline: none;
+                    text-transform: uppercase;
+                    color: #f5f5f5;
+                    cursor: pointer;
+                    background-color: #e53935;
+                    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+                    border-radius: 6px;
+                    font-size: 0.9rem;
+                    line-height: 20px;
                     letter-spacing: 1px;
-                    background-color: #da867d;
+                    box-shadow: rgba(255, 255, 255, 0.18) 1px 1px 1px;
                 }
             }
             .container-cafe{
@@ -95,7 +107,7 @@
                     margin: 20px 0 0px 0;
                     p{
                         padding: 0 0px;
-                        font-size: 1.2rem;
+                        font-size: 1rem;
                         line-height: 25px;
                     }
                 }
@@ -139,7 +151,7 @@
                 margin: 0 0 7px 0;
             }
             .line{
-                margin: 0 0 0 -290px; 
+                margin: 0 0 0 -190px; 
             }
         }
         .center{

@@ -25,10 +25,11 @@ header {
         width: 100%;
         background-color: rgba(40, 11, 63, 0.56);
         background-blend-mode: overlay; }
-        header .hero .container .container-hero h3 {
-          font-style: italic;
+        header .hero .container .container-hero h3, header .hero .container .container-hero h1 {
+          font-weight: 700;
           color: #e4e4e4;
-          text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.2); }
+          text-shadow: 4px -2px 0px #510a0a;
+          letter-spacing: 2px; }
         header .hero .container .container-hero .container-btn {
           display: flex;
           justify-content: center;
@@ -37,6 +38,7 @@ header {
           header .hero .container .container-hero .container-btn a {
             text-decoration: none; }
             header .hero .container .container-hero .container-btn a button {
+              font-weight: 600;
               appearance: inherit;
               border: none;
               background-color: transparent;
@@ -44,14 +46,13 @@ header {
               text-transform: uppercase;
               color: #f5f5f5;
               cursor: pointer;
-              background-color: rgba(111, 64, 106, 0.9);
-              text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+              background-color: #e53935;
+              text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
               border-radius: 6px;
               font-size: 0.9rem;
               line-height: 20px;
               letter-spacing: 1px;
-              box-shadow: rgba(255, 255, 255, 0.18) 1px 1px 1px;
-              border: solid 1px #fff; }
+              box-shadow: rgba(255, 255, 255, 0.18) 1px 1px 1px; }
             header .hero .container .container-hero .container-btn a button:hover {
               border: none;
               outline: none; }
@@ -66,9 +67,14 @@ header {
         background-image: url(../../img/hero-tablet.jpg);
         background-size: cover;
         background-position: center; }
-        header .hero .container .container-hero .slogan {
-          font-size: 3rem;
-          padding: 40px 50px; }
+        header .hero .container .container-hero h1 {
+          font-size: 2.8rem;
+          margin: 0 0 60px 0; }
+        header .hero .container .container-hero .logo {
+          font-family: "Lemon Milk";
+          letter-spacing: 3px;
+          color: #f7efc0;
+          text-shadow: 4px -2px 0px #510a0a; }
         header .hero .container .container-hero .container.hero {
           display: flex;
           justify-content: center;
@@ -78,7 +84,7 @@ header {
           flex-direction: row; }
           header .hero .container .container-hero .container-btn a {
             width: 400px;
-            margin: 0 20px; }
+            margin: 0 20px 50px 0; }
             header .hero .container .container-hero .container-btn a button {
               height: 50px;
               font-size: 1rem; }
@@ -94,13 +100,12 @@ header {
       background-blend-mode: overlay;
       height: 100vh;
       display: flex;
-      flex-direction: column;
-      justify-content: space-between; }
-      header .hero .container .container-hero .slogan {
-        padding: 40% 18px 0 18px;
-        font-size: 1.7rem; }
+      flex-direction: column; }
+      header .hero .container .container-hero h1 {
+        padding: 15% 18px 0 18px;
+        font-size: 1.8rem; }
       header .hero .container .container-hero .container-btn {
-        margin: 0 0 25% 0; }
+        margin: 10px 0 25% 0; }
         header .hero .container .container-hero .container-btn a {
           margin: 40px 0 0 0; }
           header .hero .container .container-hero .container-btn a button {
@@ -116,10 +121,9 @@ header {
     font-weight: 700;
     letter-spacing: 1.2px; }
   .servicios .container-title .line {
-    border-bottom: 5px solid #da867d;
+    border-bottom: 5px solid #ffeb3b;
     width: 400px;
-    margin: 0 0 0 -250px;
-    box-shadow: rgba(0, 0, 0, 0.18) 2px 2px 2px;
+    margin: 10px 0 0 -250px;
     border-top: 1px inset rgba(0, 0, 0, 0.08);
     border-left: 1px inset rgba(0, 0, 0, 0.08); }
   .servicios .container-text p {
@@ -151,6 +155,7 @@ header {
           align-items: center;
           flex-direction: column; }
         .servicios .container-main .cards .container-card .container-content h3 {
+          text-shadow: black 0.1px 0.1px 0.8px;
           text-align: center; }
   @media (min-width: 767px) {
     .servicios {
@@ -171,36 +176,47 @@ header {
           letter-spacing: 1px;
           line-height: 28px;
           margin: 0 0 10px 0; }
-      .servicios .container-main .cards {
-        margin: 0 0 100px 0;
-        width: 100%;
-        height: 328.25px; }
-        .servicios .container-main .cards .container-card {
-          width: 202.8px;
-          margin: 30px;
-          padding: 20px 30px;
-          height: 100%; }
-          .servicios .container-main .cards .container-card .container-top img {
-            width: 120px;
-            margin: 5px 0 0 0; }
-          .servicios .container-main .cards .container-card .container-top h4 {
-            margin: 10px 0 5px 0;
-            font-size: 1.1rem;
-            text-align: center;
-            line-height: 27px;
-            letter-spacing: 0.5px; }
-          .servicios .container-main .cards .container-card .container-top .line {
-            width: 60px;
-            border-bottom: solid 2px #cdbef6; }
-          .servicios .container-main .cards .container-card .container-content {
-            text-align: left;
-            font-size: 0.8rem;
-            margin: 0 0 15px 0; }
-            .servicios .container-main .cards .container-card .container-content h3 {
-              margin: 7px 0 0 0;
-              font-weight: 500; }
-              .servicios .container-main .cards .container-card .container-content h3:nth-child(1) {
-                margin: 0; } }
+      .servicios .container-main {
+        padding: 0 auto; }
+        .servicios .container-main .cards {
+          margin: 0 0 100px 0;
+          width: 100%;
+          height: 361.075px; }
+          .servicios .container-main .cards .container-card {
+            max-width: 223.08px;
+            min-width: 150px;
+            margin: 30px 20px;
+            padding: 20px 30px;
+            height: 100%; }
+            .servicios .container-main .cards .container-card .container-top img {
+              width: 120px;
+              margin: 5px 0 0 0; }
+            .servicios .container-main .cards .container-card .container-top h4 {
+              margin: 10px 0 5px 0;
+              font-size: 1.1rem;
+              text-align: center;
+              line-height: 27px;
+              letter-spacing: 0.5px; }
+            .servicios .container-main .cards .container-card .container-top .line {
+              width: 60px;
+              border-bottom: solid 2px #cdbef6; }
+            .servicios .container-main .cards .container-card .container-content {
+              text-align: left;
+              font-size: 0.8rem;
+              margin: 0 0 15px 0; }
+              .servicios .container-main .cards .container-card .container-content h3 {
+                width: 100%;
+                margin: 7px 0 0 0;
+                font-weight: 500;
+                line-height: 20px;
+                letter-spacing: 0.3px; }
+                .servicios .container-main .cards .container-card .container-content h3:nth-child(1) {
+                  margin: 0; }
+            .servicios .container-main .cards .container-card .container-btn {
+              margin: 0 0 10px 0; }
+              .servicios .container-main .cards .container-card .container-btn button {
+                font-weight: 600;
+                font-size: 0.7rem; } }
   @media (max-width: 767px) {
     .servicios {
       padding: 70px 10px 40px 10px; }
@@ -214,15 +230,16 @@ header {
       .servicios .container-text p {
         padding: 20px 20px 0 20px;
         font-size: 1.1rem;
-        line-height: 22px; }
+        line-height: 23px;
+        letter-spacing: 0.3px; }
       .servicios .container-main {
         margin: 30px; }
         .servicios .container-main .cards {
           width: 100%;
           flex-direction: column; }
           .servicios .container-main .cards .container-card {
-            width: 245px;
-            height: 350px;
+            width: 255px;
+            height: 360px;
             margin: 0 0 30px 0; }
             .servicios .container-main .cards .container-card:nth-child(3) {
               margin: 0; }
@@ -243,7 +260,8 @@ header {
               .servicios .container-main .cards .container-card .container-content h3 {
                 margin: 0;
                 font-weight: 500;
-                line-height: 30px; }
+                line-height: 25px;
+                padding: 0 15px; }
             .servicios .container-main .cards .container-card:nth-child(2) h3 {
               line-height: 22px; }
             .servicios .container-main .cards .container-card .container-btn {
@@ -319,13 +337,13 @@ header {
   .nosotros .container-title {
     display: flex;
     justify-content: right;
-    align-items: center;
     flex-direction: column; }
     .nosotros .container-title h4 {
       font-family: 'Sansita Swashed', cursive; }
     .nosotros .container-title .line {
-      border-bottom: 5px solid #da867d;
-      box-shadow: rgba(0, 0, 0, 0.18) 1px 1px 1px; }
+      border-bottom: 5px solid #ffeb3b;
+      width: 400px;
+      margin: 5px 0 0 -255px; }
   .nosotros .text p {
     letter-spacing: 0.9px;
     line-height: 22px; }
@@ -344,7 +362,8 @@ header {
         justify-content: center;
         align-items: center; }
         .nosotros main .container-perfil .izq img {
-          box-shadow: -15px -15px 2px 2px rgba(125, 83, 121, 0.7); }
+          box-shadow: -15px -15px 2px 2px rgba(125, 83, 121, 0.3);
+          border-radius: 3px; }
       .nosotros main .container-perfil .der {
         position: relative; }
         .nosotros main .container-perfil .der h4 {
@@ -360,17 +379,21 @@ header {
             width: 20px; }
         .nosotros main .container-perfil .der p {
           font-weight: lighter;
-          line-height: 20px; }
+          line-height: 20px;
+          font-weight: regular;
+          letter-spacing: 0.7px;
+          color: black;
+          text-shadow: black 0.1px 0.1px 1px; }
         .nosotros main .container-perfil .der .line-right {
           position: absolute;
           bottom: 0;
           right: 0;
-          background: #7d5379; }
+          background: rgba(125, 83, 121, 0.6); }
         .nosotros main .container-perfil .der .line-bottom {
           position: absolute;
           bottom: 0;
           right: 0;
-          background: #7d5379; }
+          background: rgba(125, 83, 121, 0.6); }
     .nosotros main .container-perfil-revers {
       display: flex;
       justify-content: center;
@@ -380,7 +403,8 @@ header {
         justify-content: center;
         align-items: center; }
         .nosotros main .container-perfil-revers .der img {
-          box-shadow: 15px -15px 2px 2px rgba(125, 83, 121, 0.7); }
+          box-shadow: 15px -15px 2px 2px rgba(125, 83, 121, 0.3);
+          border-radius: 3px; }
       .nosotros main .container-perfil-revers .izq {
         position: relative; }
         .nosotros main .container-perfil-revers .izq h4 {
@@ -394,27 +418,27 @@ header {
               width: 20px; }
         .nosotros main .container-perfil-revers .izq p {
           font-weight: lighter;
-          line-height: 20px; }
+          line-height: 20px;
+          font-weight: regular;
+          letter-spacing: 0.7px;
+          color: black;
+          text-shadow: black 0.1px 0.1px 1px; }
         .nosotros main .container-perfil-revers .izq .line-right {
           position: absolute;
           bottom: 0;
           left: 0;
-          background: #7d5379; }
+          background: rgba(125, 83, 121, 0.6); }
         .nosotros main .container-perfil-revers .izq .line-bottom {
           position: absolute;
           bottom: 0;
           left: 0;
-          background: #7d5379; }
+          background: rgba(125, 83, 121, 0.6); }
   @media (min-width: 767px) {
     .nosotros .container-title {
-      padding: 80px 0 0 0; }
+      padding: 80px 0 0 80px; }
       .nosotros .container-title h4 {
         font-size: 2rem;
-        margin: 0; }
-      .nosotros .container-title .line {
-        width: 200px;
-        height: 5px;
-        margin: 5px 0 0 0; }
+        margin: 0 0 5px 0; }
     .nosotros .text {
       display: flex;
       justify-content: center;
@@ -427,32 +451,32 @@ header {
     .nosotros main {
       flex-direction: column; }
       .nosotros main .container-perfil {
-        margin: 50px 0px 0 0;
-        padding: 0 100px; }
+        margin: 50px 0px 0 0; }
         .nosotros main .container-perfil .izq {
           margin: 0 50px 0 0; }
           .nosotros main .container-perfil .izq img {
             width: 150px; }
-        .nosotros main .container-perfil .der p {
-          margin: 10px 2em 2em 0;
-          font-size: 1rem; }
-        .nosotros main .container-perfil .der h4 {
-          display: flex;
-          font-size: 1.1rem;
-          margin: 0 0 5px 0; }
-          .nosotros main .container-perfil .der h4 span {
-            margin: 0 0 10px 0; }
-            .nosotros main .container-perfil .der h4 span a img {
-              width: 30px;
-              margin: 0 0 -3px 10px; }
-        .nosotros main .container-perfil .der .line-right {
-          height: 50px;
-          width: 2px; }
-        .nosotros main .container-perfil .der .line-bottom {
-          height: 2px;
-          width: 100px; }
+        .nosotros main .container-perfil .der {
+          width: 500px; }
+          .nosotros main .container-perfil .der p {
+            margin: 0 2em 0.5em 0;
+            font-size: 1rem; }
+          .nosotros main .container-perfil .der h4 {
+            display: flex;
+            font-size: 1.2rem;
+            margin: 0 0 5px 0; }
+            .nosotros main .container-perfil .der h4 span {
+              margin: 0 0 10px 0; }
+              .nosotros main .container-perfil .der h4 span a img {
+                width: 30px;
+                margin: 0 0 -3px 10px; }
+          .nosotros main .container-perfil .der .line-right {
+            height: 50px;
+            width: 2px; }
+          .nosotros main .container-perfil .der .line-bottom {
+            height: 2px;
+            width: 100px; }
       .nosotros main .container-perfil-revers {
-        padding: 0 100px;
         margin: 50px 0 0 0; }
         .nosotros main .container-perfil-revers .der {
           margin: 0 0 0 50px; }
@@ -460,9 +484,10 @@ header {
             width: 150px; }
         .nosotros main .container-perfil-revers .izq {
           display: inline-block;
-          float: right; }
+          float: right;
+          width: 480px; }
           .nosotros main .container-perfil-revers .izq p {
-            margin: 10px 0 1.4em 2em;
+            margin: 10px 0 1.5em 2em;
             font-size: 1rem;
             text-align: right; }
           .nosotros main .container-perfil-revers .izq h4 {
@@ -484,13 +509,14 @@ header {
             width: 100px; } }
   @media (max-width: 767px) {
     .nosotros .container-title {
-      padding: 70px 0 0 0; }
+      padding: 70px 0 0 30px; }
       .nosotros .container-title h4 {
         font-size: 1.5rem;
         margin: 0 0 10px 0; }
       .nosotros .container-title .line {
-        width: 150px;
-        height: 5px; }
+        width: 450px;
+        height: 5px;
+        margin: 0 -320px; }
     .nosotros .text {
       display: flex;
       justify-content: center;
@@ -516,7 +542,7 @@ header {
             font-size: 1.1rem;
             margin: 5px 0 5px 0; }
           .nosotros main .container-perfil .der p {
-            margin: 0 2em 3em 0;
+            margin: 0 2em 1.5em 0;
             font-size: 1rem; }
           .nosotros main .container-perfil .der .line-right {
             height: 50px;
@@ -535,11 +561,12 @@ header {
           width: 300px;
           display: flex;
           flex-direction: column;
-          justify-content: center; }
+          justify-content: center;
+          padding: 0 0 0 10px; }
           .nosotros main .container-perfil-revers .izq p {
             text-align: right;
             font-size: 1rem;
-            margin: 5px 0 3em 0;
+            margin: 5px 0 1.1em 0;
             padding: 0 0 5px 0; }
           .nosotros main .container-perfil-revers .izq h4 {
             position: relative;
@@ -568,10 +595,9 @@ header {
     font-weight: 700;
     letter-spacing: 1.2px; }
   .contacto .container-title .line {
-    border-bottom: 5px solid #da867d;
+    border-bottom: 5px solid #ffeb3b;
     width: 400px;
-    margin: 0 0 0 -250px;
-    box-shadow: rgba(0, 0, 0, 0.18) 2px 2px 2px;
+    margin: 10px 0 0 -250px;
     border-top: 1px inset rgba(0, 0, 0, 0.08);
     border-left: 1px inset rgba(0, 0, 0, 0.08); }
   .contacto .center {
@@ -596,8 +622,21 @@ header {
         align-items: center;
         flex-direction: column; }
         .contacto .center .container .button-mail button {
+          font-weight: 600;
+          appearance: inherit;
+          border: none;
+          background-color: transparent;
+          outline: none;
+          text-transform: uppercase;
+          color: #f5f5f5;
+          cursor: pointer;
+          background-color: #e53935;
+          text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+          border-radius: 6px;
+          font-size: 0.9rem;
+          line-height: 20px;
           letter-spacing: 1px;
-          background-color: #da867d; }
+          box-shadow: rgba(255, 255, 255, 0.18) 1px 1px 1px; }
       .contacto .center .container .container-cafe {
         display: flex;
         justify-content: center;
@@ -629,7 +668,7 @@ header {
             margin: 20px 0 0px 0; }
             .contacto .center .container .container-text p {
               padding: 0 0px;
-              font-size: 1.2rem;
+              font-size: 1rem;
               line-height: 25px; }
           .contacto .center .container .button-mail {
             margin: 0 0 40px 0; }
@@ -656,7 +695,7 @@ header {
           font-size: 1.5rem;
           margin: 0 0 7px 0; }
         .contacto .container-title .line {
-          margin: 0 0 0 -290px; }
+          margin: 0 0 0 -190px; }
       .contacto .center {
         margin: 50px auto 10px;
         width: 300px; }
@@ -908,6 +947,7 @@ header {
     .menu-modal a:active {
       font-size: 1.4rem; }
     .menu-modal a button {
+      font-weight: 600;
       appearance: inherit;
       border: none;
       background-color: transparent;
@@ -915,14 +955,13 @@ header {
       text-transform: uppercase;
       color: #f5f5f5;
       cursor: pointer;
-      background-color: #da867dcc;
-      text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+      background-color: #e53935;
+      text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
       border-radius: 6px;
       font-size: 0.9rem;
       line-height: 20px;
       letter-spacing: 1px;
-      box-shadow: rgba(255, 255, 255, 0.18) 1px 1px 1px;
-      border: solid 1px #fff; }
+      box-shadow: rgba(255, 255, 255, 0.18) 1px 1px 1px; }
     .menu-modal a button:hover {
       border: none;
       outline: none; }
@@ -963,7 +1002,7 @@ header {
       align-items: center; }
       .navbar .container .logo img {
         width: 100%; }
-      .navbar .container .logo h2 {
+      .navbar .container .logo h1 {
         font-family: "Lemon Milk";
         letter-spacing: 3px;
         color: #f7efc0;
@@ -1030,7 +1069,7 @@ header {
       stroke-width: 6; }
 
 .sticky {
-  background: rgba(123, 68, 107, 0.8);
+  background: rgba(123, 68, 107, 0.95);
   transition: all 0.5s ease;
   padding: 0;
   box-shadow: 0px 1px 5px 3px rgba(88, 70, 136, 0.3); }
@@ -1042,9 +1081,9 @@ header {
       width: 55px;
       height: 48px;
       margin: 2px 3px 2px 25px; }
-    .navbar .container .logo h2 {
-      margin: 0 0 0 10px;
-      font-size: 1.33rem; }
+    .navbar .container .logo h1 {
+      margin: 0 0 0 13px;
+      font-size: 1.2rem; }
     .navbar .container .menu {
       margin: 0 30px 0 0; }
       .navbar .container .menu a {
@@ -1065,8 +1104,8 @@ header {
     .navbar .container .logo img {
       width: 45px;
       height: 38px;
-      margin: 2px 5px 2px 15px; }
-    .navbar .container .logo h2 {
+      margin: 2px 10px 2px 20px; }
+    .navbar .container .logo h1 {
       font-size: 1rem; }
     .navbar .container .menu {
       display: none; } }
@@ -1123,7 +1162,7 @@ button {
   border: none;
   padding: 0.6rem 1.25rem;
   font-size: 0.8rem;
-  border-radius: 5px;
+  border-radius: 3px;
   font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 1px;
