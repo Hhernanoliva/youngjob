@@ -106,13 +106,13 @@
      }
     @include respon(mobile){
         .espaciador{
-            padding: 30px 0;
+            padding: 35px 0;
         }
-        padding: 60px 2px 60px 2px;
+        padding: 65px 9px;
         .container-servicio{
             margin: 0 3px 40px 3px;
             .contenido{
-                padding: 35px 3px;
+                padding: 35px 10px;
                 box-shadow: rgba(0, 0, 0, 0.18) 2px 2px 2px;
                 border-top: 1px inset rgba(0,0,0,.08);
                 border-left: 1px inset rgba(0,0,0,.08);
